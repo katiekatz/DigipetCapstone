@@ -71,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0223288820A082C0002A2646 /* Digipet-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Digipet-Bridging-Header.h"; sourceTree = "<group>"; };
 		025B45DA20A08008006849EE /* DigipetCapstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigipetCapstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		025B45DD20A08008006849EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		025B45EF20A08009006849EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -196,6 +197,7 @@
 		025B45DC20A08008006849EE /* DigipetCapstone */ = {
 			isa = PBXGroup;
 			children = (
+				0223288820A082C0002A2646 /* Digipet-Bridging-Header.h */,
 				025B461320A080E4006849EE /* RZTransitions */,
 				025B45DD20A08008006849EE /* AppDelegate.swift */,
 				025B46A520A08152006849EE /* Scenes */,
