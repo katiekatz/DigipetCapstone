@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		025B45DE20A08008006849EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B45DD20A08008006849EE /* AppDelegate.swift */; };
+		025B45E020A08008006849EE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 025B45DF20A08008006849EE /* GameScene.sks */; };
+		025B45E220A08008006849EE /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 025B45E120A08008006849EE /* Actions.sks */; };
+		025B45E420A08008006849EE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B45E320A08008006849EE /* GameScene.swift */; };
+		025B45E620A08008006849EE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B45E520A08008006849EE /* GameViewController.swift */; };
+		025B45E920A08008006849EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025B45E720A08008006849EE /* Main.storyboard */; };
+		025B45EB20A08009006849EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025B45EA20A08009006849EE /* Assets.xcassets */; };
+		025B45EE20A08009006849EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025B45EC20A08009006849EE /* LaunchScreen.storyboard */; };
+		025B45F920A08009006849EE /* DigipetCapstoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B45F820A08009006849EE /* DigipetCapstoneTests.swift */; };
+		025B460420A08009006849EE /* DigipetCapstoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B460320A08009006849EE /* DigipetCapstoneUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		025B45F520A08009006849EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 025B45D220A08008006849EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 025B45D920A08008006849EE;
+			remoteInfo = DigipetCapstone;
+		};
+		025B460020A08009006849EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 025B45D220A08008006849EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 025B45D920A08008006849EE;
+			remoteInfo = DigipetCapstone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		025B45DA20A08008006849EE /* DigipetCapstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigipetCapstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		025B45DD20A08008006849EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		025B45DF20A08008006849EE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		025B45E120A08008006849EE /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		025B45E320A08008006849EE /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		025B45E520A08008006849EE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		025B45E820A08008006849EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		025B45EA20A08009006849EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		025B45ED20A08009006849EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		025B45EF20A08009006849EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		025B45F420A08009006849EE /* DigipetCapstoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigipetCapstoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		025B45F820A08009006849EE /* DigipetCapstoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigipetCapstoneTests.swift; sourceTree = "<group>"; };
+		025B45FA20A08009006849EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		025B45FF20A08009006849EE /* DigipetCapstoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigipetCapstoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		025B460320A08009006849EE /* DigipetCapstoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigipetCapstoneUITests.swift; sourceTree = "<group>"; };
+		025B460520A08009006849EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		025B45D720A08008006849EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025B45F120A08009006849EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025B45FC20A08009006849EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		025B45D120A08008006849EE = {
+			isa = PBXGroup;
+			children = (
+				025B45DC20A08008006849EE /* DigipetCapstone */,
+				025B45F720A08009006849EE /* DigipetCapstoneTests */,
+				025B460220A08009006849EE /* DigipetCapstoneUITests */,
+				025B45DB20A08008006849EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		025B45DB20A08008006849EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				025B45DA20A08008006849EE /* DigipetCapstone.app */,
+				025B45F420A08009006849EE /* DigipetCapstoneTests.xctest */,
+				025B45FF20A08009006849EE /* DigipetCapstoneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		025B45DC20A08008006849EE /* DigipetCapstone */ = {
+			isa = PBXGroup;
+			children = (
+				025B45DD20A08008006849EE /* AppDelegate.swift */,
+				025B45DF20A08008006849EE /* GameScene.sks */,
+				025B45E120A08008006849EE /* Actions.sks */,
+				025B45E320A08008006849EE /* GameScene.swift */,
+				025B45E520A08008006849EE /* GameViewController.swift */,
+				025B45E720A08008006849EE /* Main.storyboard */,
+				025B45EA20A08009006849EE /* Assets.xcassets */,
+				025B45EC20A08009006849EE /* LaunchScreen.storyboard */,
+				025B45EF20A08009006849EE /* Info.plist */,
+			);
+			path = DigipetCapstone;
+			sourceTree = "<group>";
+		};
+		025B45F720A08009006849EE /* DigipetCapstoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				025B45F820A08009006849EE /* DigipetCapstoneTests.swift */,
+				025B45FA20A08009006849EE /* Info.plist */,
+			);
+			path = DigipetCapstoneTests;
+			sourceTree = "<group>";
+		};
+		025B460220A08009006849EE /* DigipetCapstoneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				025B460320A08009006849EE /* DigipetCapstoneUITests.swift */,
+				025B460520A08009006849EE /* Info.plist */,
+			);
+			path = DigipetCapstoneUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		025B45D920A08008006849EE /* DigipetCapstone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025B460820A08009006849EE /* Build configuration list for PBXNativeTarget "DigipetCapstone" */;
+			buildPhases = (
+				025B45D620A08008006849EE /* Sources */,
+				025B45D720A08008006849EE /* Frameworks */,
+				025B45D820A08008006849EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigipetCapstone;
+			productName = DigipetCapstone;
+			productReference = 025B45DA20A08008006849EE /* DigipetCapstone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		025B45F320A08009006849EE /* DigipetCapstoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025B460B20A08009006849EE /* Build configuration list for PBXNativeTarget "DigipetCapstoneTests" */;
+			buildPhases = (
+				025B45F020A08009006849EE /* Sources */,
+				025B45F120A08009006849EE /* Frameworks */,
+				025B45F220A08009006849EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				025B45F620A08009006849EE /* PBXTargetDependency */,
+			);
+			name = DigipetCapstoneTests;
+			productName = DigipetCapstoneTests;
+			productReference = 025B45F420A08009006849EE /* DigipetCapstoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		025B45FE20A08009006849EE /* DigipetCapstoneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025B460E20A08009006849EE /* Build configuration list for PBXNativeTarget "DigipetCapstoneUITests" */;
+			buildPhases = (
+				025B45FB20A08009006849EE /* Sources */,
+				025B45FC20A08009006849EE /* Frameworks */,
+				025B45FD20A08009006849EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				025B460120A08009006849EE /* PBXTargetDependency */,
+			);
+			name = DigipetCapstoneUITests;
+			productName = DigipetCapstoneUITests;
+			productReference = 025B45FF20A08009006849EE /* DigipetCapstoneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		025B45D220A08008006849EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Katie Katz";
+				TargetAttributes = {
+					025B45D920A08008006849EE = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					025B45F320A08009006849EE = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 025B45D920A08008006849EE;
+					};
+					025B45FE20A08009006849EE = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 025B45D920A08008006849EE;
+					};
+				};
+			};
+			buildConfigurationList = 025B45D520A08008006849EE /* Build configuration list for PBXProject "DigipetCapstone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 025B45D120A08008006849EE;
+			productRefGroup = 025B45DB20A08008006849EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				025B45D920A08008006849EE /* DigipetCapstone */,
+				025B45F320A08009006849EE /* DigipetCapstoneTests */,
+				025B45FE20A08009006849EE /* DigipetCapstoneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		025B45D820A08008006849EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025B45E920A08008006849EE /* Main.storyboard in Resources */,
+				025B45E020A08008006849EE /* GameScene.sks in Resources */,
+				025B45EB20A08009006849EE /* Assets.xcassets in Resources */,
+				025B45EE20A08009006849EE /* LaunchScreen.storyboard in Resources */,
+				025B45E220A08008006849EE /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025B45F220A08009006849EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025B45FD20A08009006849EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		025B45D620A08008006849EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025B45E420A08008006849EE /* GameScene.swift in Sources */,
+				025B45E620A08008006849EE /* GameViewController.swift in Sources */,
+				025B45DE20A08008006849EE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025B45F020A08009006849EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025B45F920A08009006849EE /* DigipetCapstoneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025B45FB20A08009006849EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025B460420A08009006849EE /* DigipetCapstoneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		025B45F620A08009006849EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 025B45D920A08008006849EE /* DigipetCapstone */;
+			targetProxy = 025B45F520A08009006849EE /* PBXContainerItemProxy */;
+		};
+		025B460120A08009006849EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 025B45D920A08008006849EE /* DigipetCapstone */;
+			targetProxy = 025B460020A08009006849EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		025B45E720A08008006849EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				025B45E820A08008006849EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		025B45EC20A08009006849EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				025B45ED20A08009006849EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		025B460620A08009006849EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		025B460720A08009006849EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		025B460920A08009006849EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QL3776T85;
+				INFOPLIST_FILE = DigipetCapstone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaitlynkatz.DigipetCapstone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		025B460A20A08009006849EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QL3776T85;
+				INFOPLIST_FILE = DigipetCapstone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaitlynkatz.DigipetCapstone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		025B460C20A08009006849EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QL3776T85;
+				INFOPLIST_FILE = DigipetCapstoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaitlynkatz.DigipetCapstoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigipetCapstone.app/DigipetCapstone";
+			};
+			name = Debug;
+		};
+		025B460D20A08009006849EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QL3776T85;
+				INFOPLIST_FILE = DigipetCapstoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaitlynkatz.DigipetCapstoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigipetCapstone.app/DigipetCapstone";
+			};
+			name = Release;
+		};
+		025B460F20A08009006849EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QL3776T85;
+				INFOPLIST_FILE = DigipetCapstoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaitlynkatz.DigipetCapstoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DigipetCapstone;
+			};
+			name = Debug;
+		};
+		025B461020A08009006849EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QL3776T85;
+				INFOPLIST_FILE = DigipetCapstoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaitlynkatz.DigipetCapstoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DigipetCapstone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		025B45D520A08008006849EE /* Build configuration list for PBXProject "DigipetCapstone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025B460620A08009006849EE /* Debug */,
+				025B460720A08009006849EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025B460820A08009006849EE /* Build configuration list for PBXNativeTarget "DigipetCapstone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025B460920A08009006849EE /* Debug */,
+				025B460A20A08009006849EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025B460B20A08009006849EE /* Build configuration list for PBXNativeTarget "DigipetCapstoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025B460C20A08009006849EE /* Debug */,
+				025B460D20A08009006849EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025B460E20A08009006849EE /* Build configuration list for PBXNativeTarget "DigipetCapstoneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025B460F20A08009006849EE /* Debug */,
+				025B461020A08009006849EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 025B45D220A08008006849EE /* Project object */;
+}
