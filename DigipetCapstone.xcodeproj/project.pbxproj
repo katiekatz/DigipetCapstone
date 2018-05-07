@@ -8,15 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		025B45DE20A08008006849EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B45DD20A08008006849EE /* AppDelegate.swift */; };
-		025B45E020A08008006849EE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 025B45DF20A08008006849EE /* GameScene.sks */; };
-		025B45E220A08008006849EE /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 025B45E120A08008006849EE /* Actions.sks */; };
-		025B45E420A08008006849EE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B45E320A08008006849EE /* GameScene.swift */; };
-		025B45E620A08008006849EE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B45E520A08008006849EE /* GameViewController.swift */; };
-		025B45E920A08008006849EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025B45E720A08008006849EE /* Main.storyboard */; };
-		025B45EB20A08009006849EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025B45EA20A08009006849EE /* Assets.xcassets */; };
-		025B45EE20A08009006849EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025B45EC20A08009006849EE /* LaunchScreen.storyboard */; };
 		025B45F920A08009006849EE /* DigipetCapstoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B45F820A08009006849EE /* DigipetCapstoneTests.swift */; };
 		025B460420A08009006849EE /* DigipetCapstoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B460320A08009006849EE /* DigipetCapstoneUITests.swift */; };
+		025B461220A0809C006849EE /* VoiceRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B461120A0809C006849EE /* VoiceRecognition.swift */; };
+		025B464620A080E4006849EE /* RZTransitionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B461620A080E4006849EE /* RZTransitionsManager.m */; };
+		025B464720A080E4006849EE /* NSObject+RZTransitionsViewHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B461920A080E4006849EE /* NSObject+RZTransitionsViewHelpers.m */; };
+		025B464820A080E4006849EE /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B461A20A080E4006849EE /* UIImage+RZTransitionsSnapshotHelpers.m */; };
+		025B464920A080E4006849EE /* UIImage+RZTransitionsFastImageBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B461C20A080E4006849EE /* UIImage+RZTransitionsFastImageBlur.m */; };
+		025B464A20A080E4006849EE /* RZTransitionsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B462020A080E4006849EE /* RZTransitionsNavigationController.m */; };
+		025B464B20A080E4006849EE /* RZZoomPushAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B462520A080E4006849EE /* RZZoomPushAnimationController.m */; };
+		025B464C20A080E4006849EE /* RZZoomAlphaAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B462720A080E4006849EE /* RZZoomAlphaAnimationController.m */; };
+		025B464D20A080E4006849EE /* RZSegmentControlMoveFadeAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B462920A080E4006849EE /* RZSegmentControlMoveFadeAnimationController.m */; };
+		025B464E20A080E4006849EE /* RZCardSlideAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B462D20A080E4006849EE /* RZCardSlideAnimationController.m */; };
+		025B464F20A080E4006849EE /* RZZoomBlurAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B462F20A080E4006849EE /* RZZoomBlurAnimationController.m */; };
+		025B465020A080E4006849EE /* RZRectZoomAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B463020A080E4006849EE /* RZRectZoomAnimationController.m */; };
+		025B465120A080E4006849EE /* RZShrinkZoomAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B463220A080E4006849EE /* RZShrinkZoomAnimationController.m */; };
+		025B465220A080E4006849EE /* RZCirclePushAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B463420A080E4006849EE /* RZCirclePushAnimationController.m */; };
+		025B465320A080E4006849EE /* RZBaseSwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B463620A080E4006849EE /* RZBaseSwipeInteractionController.m */; };
+		025B465420A080E4006849EE /* RZHorizontalInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B463820A080E4006849EE /* RZHorizontalInteractionController.m */; };
+		025B465520A080E4006849EE /* RZVerticalSwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B463A20A080E4006849EE /* RZVerticalSwipeInteractionController.m */; };
+		025B465620A080E4006849EE /* RZOverscrollInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B463B20A080E4006849EE /* RZOverscrollInteractionController.m */; };
+		025B465720A080E4006849EE /* RZPinchInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B463F20A080E4006849EE /* RZPinchInteractionController.m */; };
+		025B465820A080E4006849EE /* RZUniqueTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 025B464520A080E4006849EE /* RZUniqueTransition.m */; };
+		025B46A020A0811C006849EE /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 025B469F20A0811C006849EE /* Actions.sks */; };
+		025B46A320A08139006849EE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 025B46A120A08138006849EE /* GameScene.sks */; };
+		025B46A420A08139006849EE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B46A220A08138006849EE /* GameScene.swift */; };
+		025B46A720A0816F006849EE /* Plumpfull.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 025B46A620A0816F006849EE /* Plumpfull.ttf */; };
+		025B46A920A08190006849EE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B46A820A08190006849EE /* GameViewController.swift */; };
+		025B46AE20A0819A006849EE /* LevelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B46AA20A0819A006849EE /* LevelVC.swift */; };
+		025B46AF20A0819A006849EE /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B46AB20A0819A006849EE /* MainScreen.swift */; };
+		025B46B020A0819A006849EE /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B46AC20A0819A006849EE /* LessonTableViewCell.swift */; };
+		025B46B120A0819A006849EE /* SilhouetteGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B46AD20A0819A006849EE /* SilhouetteGame.swift */; };
+		025B46B620A081B2006849EE /* LessonStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B46B220A081B1006849EE /* LessonStart.swift */; };
+		025B46B720A081B2006849EE /* MatchGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B46B320A081B1006849EE /* MatchGame.swift */; };
+		025B46B820A081B2006849EE /* Learn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B46B420A081B1006849EE /* Learn.swift */; };
+		025B46B920A081B2006849EE /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B46B520A081B2006849EE /* Lesson.swift */; };
+		025B46BF20A081C0006849EE /* LessonInfoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B46BA20A081BF006849EE /* LessonInfoBox.swift */; };
+		025B46C020A081C0006849EE /* LessonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B46BB20A081BF006849EE /* LessonRow.swift */; };
+		025B46C120A081C0006849EE /* LessonStartBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B46BC20A081BF006849EE /* LessonStartBox.swift */; };
+		025B46C220A081C0006849EE /* LessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B46BD20A081BF006849EE /* LessonTableViewController.swift */; };
+		025B46C320A081C0006849EE /* SwiftySKScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B46BE20A081BF006849EE /* SwiftySKScrollView.swift */; };
+		025B46C520A081D7006849EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025B46C420A081D6006849EE /* LaunchScreen.storyboard */; };
+		025B46C720A081FA006849EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025B46C620A081F9006849EE /* Assets.xcassets */; };
+		025B46C920A0820D006849EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025B46C820A0820D006849EE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +73,6 @@
 /* Begin PBXFileReference section */
 		025B45DA20A08008006849EE /* DigipetCapstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigipetCapstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		025B45DD20A08008006849EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		025B45DF20A08008006849EE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		025B45E120A08008006849EE /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		025B45E320A08008006849EE /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		025B45E520A08008006849EE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		025B45E820A08008006849EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		025B45EA20A08009006849EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		025B45ED20A08009006849EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		025B45EF20A08009006849EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		025B45F420A08009006849EE /* DigipetCapstoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigipetCapstoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		025B45F820A08009006849EE /* DigipetCapstoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigipetCapstoneTests.swift; sourceTree = "<group>"; };
@@ -53,6 +80,72 @@
 		025B45FF20A08009006849EE /* DigipetCapstoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigipetCapstoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		025B460320A08009006849EE /* DigipetCapstoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigipetCapstoneUITests.swift; sourceTree = "<group>"; };
 		025B460520A08009006849EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		025B461120A0809C006849EE /* VoiceRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecognition.swift; sourceTree = "<group>"; };
+		025B461520A080E4006849EE /* RZTransitionsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTransitionsManager.h; sourceTree = "<group>"; };
+		025B461620A080E4006849EE /* RZTransitionsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZTransitionsManager.m; sourceTree = "<group>"; };
+		025B461820A080E4006849EE /* UIImage+RZTransitionsFastImageBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RZTransitionsFastImageBlur.h"; sourceTree = "<group>"; };
+		025B461920A080E4006849EE /* NSObject+RZTransitionsViewHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RZTransitionsViewHelpers.m"; sourceTree = "<group>"; };
+		025B461A20A080E4006849EE /* UIImage+RZTransitionsSnapshotHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RZTransitionsSnapshotHelpers.m"; sourceTree = "<group>"; };
+		025B461B20A080E4006849EE /* NSObject+RZTransitionsViewHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RZTransitionsViewHelpers.h"; sourceTree = "<group>"; };
+		025B461C20A080E4006849EE /* UIImage+RZTransitionsFastImageBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RZTransitionsFastImageBlur.m"; sourceTree = "<group>"; };
+		025B461D20A080E4006849EE /* UIImage+RZTransitionsSnapshotHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RZTransitionsSnapshotHelpers.h"; sourceTree = "<group>"; };
+		025B461F20A080E4006849EE /* RZTransitionsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTransitionsNavigationController.h; sourceTree = "<group>"; };
+		025B462020A080E4006849EE /* RZTransitionsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZTransitionsNavigationController.m; sourceTree = "<group>"; };
+		025B462120A080E4006849EE /* RZTransitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTransitions.h; sourceTree = "<group>"; };
+		025B462320A080E4006849EE /* RZAnimationControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZAnimationControllerProtocol.h; sourceTree = "<group>"; };
+		025B462420A080E4006849EE /* RZTransitionsAnimationControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTransitionsAnimationControllers.h; sourceTree = "<group>"; };
+		025B462520A080E4006849EE /* RZZoomPushAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZZoomPushAnimationController.m; sourceTree = "<group>"; };
+		025B462620A080E4006849EE /* RZCardSlideAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZCardSlideAnimationController.h; sourceTree = "<group>"; };
+		025B462720A080E4006849EE /* RZZoomAlphaAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZZoomAlphaAnimationController.m; sourceTree = "<group>"; };
+		025B462820A080E4006849EE /* RZShrinkZoomAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZShrinkZoomAnimationController.h; sourceTree = "<group>"; };
+		025B462920A080E4006849EE /* RZSegmentControlMoveFadeAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZSegmentControlMoveFadeAnimationController.m; sourceTree = "<group>"; };
+		025B462A20A080E4006849EE /* RZZoomBlurAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZZoomBlurAnimationController.h; sourceTree = "<group>"; };
+		025B462B20A080E4006849EE /* RZRectZoomAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZRectZoomAnimationController.h; sourceTree = "<group>"; };
+		025B462C20A080E4006849EE /* RZCirclePushAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZCirclePushAnimationController.h; sourceTree = "<group>"; };
+		025B462D20A080E4006849EE /* RZCardSlideAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZCardSlideAnimationController.m; sourceTree = "<group>"; };
+		025B462E20A080E4006849EE /* RZZoomPushAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZZoomPushAnimationController.h; sourceTree = "<group>"; };
+		025B462F20A080E4006849EE /* RZZoomBlurAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZZoomBlurAnimationController.m; sourceTree = "<group>"; };
+		025B463020A080E4006849EE /* RZRectZoomAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZRectZoomAnimationController.m; sourceTree = "<group>"; };
+		025B463120A080E4006849EE /* RZSegmentControlMoveFadeAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZSegmentControlMoveFadeAnimationController.h; sourceTree = "<group>"; };
+		025B463220A080E4006849EE /* RZShrinkZoomAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZShrinkZoomAnimationController.m; sourceTree = "<group>"; };
+		025B463320A080E4006849EE /* RZZoomAlphaAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZZoomAlphaAnimationController.h; sourceTree = "<group>"; };
+		025B463420A080E4006849EE /* RZCirclePushAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZCirclePushAnimationController.m; sourceTree = "<group>"; };
+		025B463620A080E4006849EE /* RZBaseSwipeInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZBaseSwipeInteractionController.m; sourceTree = "<group>"; };
+		025B463720A080E4006849EE /* RZOverscrollInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZOverscrollInteractionController.h; sourceTree = "<group>"; };
+		025B463820A080E4006849EE /* RZHorizontalInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZHorizontalInteractionController.m; sourceTree = "<group>"; };
+		025B463920A080E4006849EE /* RZPinchInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZPinchInteractionController.h; sourceTree = "<group>"; };
+		025B463A20A080E4006849EE /* RZVerticalSwipeInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZVerticalSwipeInteractionController.m; sourceTree = "<group>"; };
+		025B463B20A080E4006849EE /* RZOverscrollInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZOverscrollInteractionController.m; sourceTree = "<group>"; };
+		025B463C20A080E4006849EE /* RZBaseSwipeInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZBaseSwipeInteractionController.h; sourceTree = "<group>"; };
+		025B463D20A080E4006849EE /* RZTransitionsInteractionControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTransitionsInteractionControllers.h; sourceTree = "<group>"; };
+		025B463E20A080E4006849EE /* RZHorizontalInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZHorizontalInteractionController.h; sourceTree = "<group>"; };
+		025B463F20A080E4006849EE /* RZPinchInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZPinchInteractionController.m; sourceTree = "<group>"; };
+		025B464020A080E4006849EE /* RZTransitionInteractionControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTransitionInteractionControllerProtocol.h; sourceTree = "<group>"; };
+		025B464120A080E4006849EE /* RZVerticalSwipeInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZVerticalSwipeInteractionController.h; sourceTree = "<group>"; };
+		025B464320A080E4006849EE /* RZUniqueTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZUniqueTransition.h; sourceTree = "<group>"; };
+		025B464420A080E4006849EE /* RZTransitionAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTransitionAction.h; sourceTree = "<group>"; };
+		025B464520A080E4006849EE /* RZUniqueTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZUniqueTransition.m; sourceTree = "<group>"; };
+		025B469F20A0811C006849EE /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		025B46A120A08138006849EE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		025B46A220A08138006849EE /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		025B46A620A0816F006849EE /* Plumpfull.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Plumpfull.ttf; sourceTree = "<group>"; };
+		025B46A820A08190006849EE /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		025B46AA20A0819A006849EE /* LevelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelVC.swift; sourceTree = "<group>"; };
+		025B46AB20A0819A006849EE /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		025B46AC20A0819A006849EE /* LessonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
+		025B46AD20A0819A006849EE /* SilhouetteGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilhouetteGame.swift; sourceTree = "<group>"; };
+		025B46B220A081B1006849EE /* LessonStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonStart.swift; sourceTree = "<group>"; };
+		025B46B320A081B1006849EE /* MatchGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchGame.swift; sourceTree = "<group>"; };
+		025B46B420A081B1006849EE /* Learn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Learn.swift; sourceTree = "<group>"; };
+		025B46B520A081B2006849EE /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		025B46BA20A081BF006849EE /* LessonInfoBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonInfoBox.swift; sourceTree = "<group>"; };
+		025B46BB20A081BF006849EE /* LessonRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonRow.swift; sourceTree = "<group>"; };
+		025B46BC20A081BF006849EE /* LessonStartBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonStartBox.swift; sourceTree = "<group>"; };
+		025B46BD20A081BF006849EE /* LessonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonTableViewController.swift; sourceTree = "<group>"; };
+		025B46BE20A081BF006849EE /* SwiftySKScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftySKScrollView.swift; sourceTree = "<group>"; };
+		025B46C420A081D6006849EE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		025B46C620A081F9006849EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		025B46C820A0820D006849EE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,14 +196,28 @@
 		025B45DC20A08008006849EE /* DigipetCapstone */ = {
 			isa = PBXGroup;
 			children = (
+				025B461320A080E4006849EE /* RZTransitions */,
 				025B45DD20A08008006849EE /* AppDelegate.swift */,
-				025B45DF20A08008006849EE /* GameScene.sks */,
-				025B45E120A08008006849EE /* Actions.sks */,
-				025B45E320A08008006849EE /* GameScene.swift */,
-				025B45E520A08008006849EE /* GameViewController.swift */,
-				025B45E720A08008006849EE /* Main.storyboard */,
-				025B45EA20A08009006849EE /* Assets.xcassets */,
-				025B45EC20A08009006849EE /* LaunchScreen.storyboard */,
+				025B46A520A08152006849EE /* Scenes */,
+				025B461120A0809C006849EE /* VoiceRecognition.swift */,
+				025B46A820A08190006849EE /* GameViewController.swift */,
+				025B469F20A0811C006849EE /* Actions.sks */,
+				025B46AC20A0819A006849EE /* LessonTableViewCell.swift */,
+				025B46AA20A0819A006849EE /* LevelVC.swift */,
+				025B46B320A081B1006849EE /* MatchGame.swift */,
+				025B46B220A081B1006849EE /* LessonStart.swift */,
+				025B46B420A081B1006849EE /* Learn.swift */,
+				025B46B520A081B2006849EE /* Lesson.swift */,
+				025B46AB20A0819A006849EE /* MainScreen.swift */,
+				025B46C820A0820D006849EE /* Main.storyboard */,
+				025B46AD20A0819A006849EE /* SilhouetteGame.swift */,
+				025B46BA20A081BF006849EE /* LessonInfoBox.swift */,
+				025B46C620A081F9006849EE /* Assets.xcassets */,
+				025B46BB20A081BF006849EE /* LessonRow.swift */,
+				025B46BC20A081BF006849EE /* LessonStartBox.swift */,
+				025B46BD20A081BF006849EE /* LessonTableViewController.swift */,
+				025B46BE20A081BF006849EE /* SwiftySKScrollView.swift */,
+				025B46C420A081D6006849EE /* LaunchScreen.storyboard */,
 				025B45EF20A08009006849EE /* Info.plist */,
 			);
 			path = DigipetCapstone;
@@ -132,6 +239,115 @@
 				025B460520A08009006849EE /* Info.plist */,
 			);
 			path = DigipetCapstoneUITests;
+			sourceTree = "<group>";
+		};
+		025B461320A080E4006849EE /* RZTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				025B461420A080E4006849EE /* Managers */,
+				025B461720A080E4006849EE /* Utilities */,
+				025B461E20A080E4006849EE /* Components */,
+				025B462120A080E4006849EE /* RZTransitions.h */,
+				025B462220A080E4006849EE /* Transitions */,
+				025B463520A080E4006849EE /* Interactors */,
+				025B464220A080E4006849EE /* Data */,
+			);
+			path = RZTransitions;
+			sourceTree = "<group>";
+		};
+		025B461420A080E4006849EE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				025B461520A080E4006849EE /* RZTransitionsManager.h */,
+				025B461620A080E4006849EE /* RZTransitionsManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		025B461720A080E4006849EE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				025B461820A080E4006849EE /* UIImage+RZTransitionsFastImageBlur.h */,
+				025B461920A080E4006849EE /* NSObject+RZTransitionsViewHelpers.m */,
+				025B461A20A080E4006849EE /* UIImage+RZTransitionsSnapshotHelpers.m */,
+				025B461B20A080E4006849EE /* NSObject+RZTransitionsViewHelpers.h */,
+				025B461C20A080E4006849EE /* UIImage+RZTransitionsFastImageBlur.m */,
+				025B461D20A080E4006849EE /* UIImage+RZTransitionsSnapshotHelpers.h */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		025B461E20A080E4006849EE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				025B461F20A080E4006849EE /* RZTransitionsNavigationController.h */,
+				025B462020A080E4006849EE /* RZTransitionsNavigationController.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		025B462220A080E4006849EE /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				025B462320A080E4006849EE /* RZAnimationControllerProtocol.h */,
+				025B462420A080E4006849EE /* RZTransitionsAnimationControllers.h */,
+				025B462520A080E4006849EE /* RZZoomPushAnimationController.m */,
+				025B462620A080E4006849EE /* RZCardSlideAnimationController.h */,
+				025B462720A080E4006849EE /* RZZoomAlphaAnimationController.m */,
+				025B462820A080E4006849EE /* RZShrinkZoomAnimationController.h */,
+				025B462920A080E4006849EE /* RZSegmentControlMoveFadeAnimationController.m */,
+				025B462A20A080E4006849EE /* RZZoomBlurAnimationController.h */,
+				025B462B20A080E4006849EE /* RZRectZoomAnimationController.h */,
+				025B462C20A080E4006849EE /* RZCirclePushAnimationController.h */,
+				025B462D20A080E4006849EE /* RZCardSlideAnimationController.m */,
+				025B462E20A080E4006849EE /* RZZoomPushAnimationController.h */,
+				025B462F20A080E4006849EE /* RZZoomBlurAnimationController.m */,
+				025B463020A080E4006849EE /* RZRectZoomAnimationController.m */,
+				025B463120A080E4006849EE /* RZSegmentControlMoveFadeAnimationController.h */,
+				025B463220A080E4006849EE /* RZShrinkZoomAnimationController.m */,
+				025B463320A080E4006849EE /* RZZoomAlphaAnimationController.h */,
+				025B463420A080E4006849EE /* RZCirclePushAnimationController.m */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		025B463520A080E4006849EE /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				025B463620A080E4006849EE /* RZBaseSwipeInteractionController.m */,
+				025B463720A080E4006849EE /* RZOverscrollInteractionController.h */,
+				025B463820A080E4006849EE /* RZHorizontalInteractionController.m */,
+				025B463920A080E4006849EE /* RZPinchInteractionController.h */,
+				025B463A20A080E4006849EE /* RZVerticalSwipeInteractionController.m */,
+				025B463B20A080E4006849EE /* RZOverscrollInteractionController.m */,
+				025B463C20A080E4006849EE /* RZBaseSwipeInteractionController.h */,
+				025B463D20A080E4006849EE /* RZTransitionsInteractionControllers.h */,
+				025B463E20A080E4006849EE /* RZHorizontalInteractionController.h */,
+				025B463F20A080E4006849EE /* RZPinchInteractionController.m */,
+				025B464020A080E4006849EE /* RZTransitionInteractionControllerProtocol.h */,
+				025B464120A080E4006849EE /* RZVerticalSwipeInteractionController.h */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		025B464220A080E4006849EE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				025B464320A080E4006849EE /* RZUniqueTransition.h */,
+				025B464420A080E4006849EE /* RZTransitionAction.h */,
+				025B464520A080E4006849EE /* RZUniqueTransition.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		025B46A520A08152006849EE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				025B46A620A0816F006849EE /* Plumpfull.ttf */,
+				025B46A120A08138006849EE /* GameScene.sks */,
+				025B46A220A08138006849EE /* GameScene.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,11 +454,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				025B45E920A08008006849EE /* Main.storyboard in Resources */,
-				025B45E020A08008006849EE /* GameScene.sks in Resources */,
-				025B45EB20A08009006849EE /* Assets.xcassets in Resources */,
-				025B45EE20A08009006849EE /* LaunchScreen.storyboard in Resources */,
-				025B45E220A08008006849EE /* Actions.sks in Resources */,
+				025B46A320A08139006849EE /* GameScene.sks in Resources */,
+				025B46C520A081D7006849EE /* LaunchScreen.storyboard in Resources */,
+				025B46A720A0816F006849EE /* Plumpfull.ttf in Resources */,
+				025B46C920A0820D006849EE /* Main.storyboard in Resources */,
+				025B46C720A081FA006849EE /* Assets.xcassets in Resources */,
+				025B46A020A0811C006849EE /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,9 +484,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				025B45E420A08008006849EE /* GameScene.swift in Sources */,
-				025B45E620A08008006849EE /* GameViewController.swift in Sources */,
+				025B465220A080E4006849EE /* RZCirclePushAnimationController.m in Sources */,
+				025B46C320A081C0006849EE /* SwiftySKScrollView.swift in Sources */,
+				025B46AE20A0819A006849EE /* LevelVC.swift in Sources */,
+				025B465620A080E4006849EE /* RZOverscrollInteractionController.m in Sources */,
+				025B46B920A081B2006849EE /* Lesson.swift in Sources */,
+				025B465120A080E4006849EE /* RZShrinkZoomAnimationController.m in Sources */,
+				025B464C20A080E4006849EE /* RZZoomAlphaAnimationController.m in Sources */,
+				025B46C220A081C0006849EE /* LessonTableViewController.swift in Sources */,
+				025B465520A080E4006849EE /* RZVerticalSwipeInteractionController.m in Sources */,
+				025B464820A080E4006849EE /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */,
+				025B461220A0809C006849EE /* VoiceRecognition.swift in Sources */,
+				025B465720A080E4006849EE /* RZPinchInteractionController.m in Sources */,
+				025B464E20A080E4006849EE /* RZCardSlideAnimationController.m in Sources */,
+				025B464F20A080E4006849EE /* RZZoomBlurAnimationController.m in Sources */,
+				025B464920A080E4006849EE /* UIImage+RZTransitionsFastImageBlur.m in Sources */,
+				025B46AF20A0819A006849EE /* MainScreen.swift in Sources */,
+				025B46B720A081B2006849EE /* MatchGame.swift in Sources */,
+				025B46B020A0819A006849EE /* LessonTableViewCell.swift in Sources */,
+				025B465420A080E4006849EE /* RZHorizontalInteractionController.m in Sources */,
+				025B465320A080E4006849EE /* RZBaseSwipeInteractionController.m in Sources */,
+				025B464B20A080E4006849EE /* RZZoomPushAnimationController.m in Sources */,
+				025B46A920A08190006849EE /* GameViewController.swift in Sources */,
+				025B46C120A081C0006849EE /* LessonStartBox.swift in Sources */,
+				025B46C020A081C0006849EE /* LessonRow.swift in Sources */,
+				025B464A20A080E4006849EE /* RZTransitionsNavigationController.m in Sources */,
+				025B465020A080E4006849EE /* RZRectZoomAnimationController.m in Sources */,
+				025B46A420A08139006849EE /* GameScene.swift in Sources */,
+				025B46BF20A081C0006849EE /* LessonInfoBox.swift in Sources */,
 				025B45DE20A08008006849EE /* AppDelegate.swift in Sources */,
+				025B465820A080E4006849EE /* RZUniqueTransition.m in Sources */,
+				025B46B120A0819A006849EE /* SilhouetteGame.swift in Sources */,
+				025B464620A080E4006849EE /* RZTransitionsManager.m in Sources */,
+				025B46B820A081B2006849EE /* Learn.swift in Sources */,
+				025B464720A080E4006849EE /* NSObject+RZTransitionsViewHelpers.m in Sources */,
+				025B46B620A081B2006849EE /* LessonStart.swift in Sources */,
+				025B464D20A080E4006849EE /* RZSegmentControlMoveFadeAnimationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,25 +553,6 @@
 			targetProxy = 025B460020A08009006849EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		025B45E720A08008006849EE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				025B45E820A08008006849EE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		025B45EC20A08009006849EE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				025B45ED20A08009006849EE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		025B460620A08009006849EE /* Debug */ = {
