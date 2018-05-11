@@ -85,14 +85,14 @@ class LessonStart : UIViewController {
     
     @IBAction func typeButtonTouched(_ sender: Any) {
         self.transitioningDelegate = RZTransitionsManager.shared()
-        let nextViewController = storyboard?.instantiateViewController(withIdentifier: (lesson?.fileDest)! + "Type")
+        let nextViewController = storyboard?.instantiateViewController(withIdentifier: (lesson?.fileDest)! + "TypeView")
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
     }
     
     @IBAction func talkButtonTouched(_ sender: Any) {
         self.transitioningDelegate = RZTransitionsManager.shared()
-        let nextViewController = storyboard?.instantiateViewController(withIdentifier: (lesson?.fileDest)! + "Talk")
+        let nextViewController = storyboard?.instantiateViewController(withIdentifier: (lesson?.fileDest)! + "TalkView")
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
     }

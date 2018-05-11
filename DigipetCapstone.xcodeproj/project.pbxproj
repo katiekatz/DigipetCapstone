@@ -51,6 +51,14 @@
 		025B46C520A081D7006849EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025B46C420A081D6006849EE /* LaunchScreen.storyboard */; };
 		025B46C720A081FA006849EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025B46C620A081F9006849EE /* Assets.xcassets */; };
 		025B46C920A0820D006849EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025B46C820A0820D006849EE /* Main.storyboard */; };
+		026F42F920A5C2490098EC23 /* L1LessonOne.sks in Resources */ = {isa = PBXBuildFile; fileRef = 026F42F220A5C2480098EC23 /* L1LessonOne.sks */; };
+		026F42FA20A5C2490098EC23 /* L1LessonTwo.sks in Resources */ = {isa = PBXBuildFile; fileRef = 026F42F320A5C2480098EC23 /* L1LessonTwo.sks */; };
+		026F42FB20A5C2490098EC23 /* L1LessonTwoTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F42F420A5C2480098EC23 /* L1LessonTwoTypeView.swift */; };
+		026F42FC20A5C2490098EC23 /* L1LessonTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F42F520A5C2480098EC23 /* L1LessonTwo.swift */; };
+		026F42FD20A5C2490098EC23 /* L1LessonOneTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F42F620A5C2480098EC23 /* L1LessonOneTypeView.swift */; };
+		026F42FE20A5C2490098EC23 /* L1LessonOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F42F720A5C2490098EC23 /* L1LessonOne.swift */; };
+		026F42FF20A5C2490098EC23 /* L1LessonOneTalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F42F820A5C2490098EC23 /* L1LessonOneTalkView.swift */; };
+		026F430120A5C53A0098EC23 /* L1LessonTwoTalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F430020A5C53A0098EC23 /* L1LessonTwoTalkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +155,14 @@
 		025B46C420A081D6006849EE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		025B46C620A081F9006849EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		025B46C820A0820D006849EE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		026F42F220A5C2480098EC23 /* L1LessonOne.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = L1LessonOne.sks; sourceTree = "<group>"; };
+		026F42F320A5C2480098EC23 /* L1LessonTwo.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = L1LessonTwo.sks; sourceTree = "<group>"; };
+		026F42F420A5C2480098EC23 /* L1LessonTwoTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L1LessonTwoTypeView.swift; sourceTree = "<group>"; };
+		026F42F520A5C2480098EC23 /* L1LessonTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L1LessonTwo.swift; sourceTree = "<group>"; };
+		026F42F620A5C2480098EC23 /* L1LessonOneTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L1LessonOneTypeView.swift; sourceTree = "<group>"; };
+		026F42F720A5C2490098EC23 /* L1LessonOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L1LessonOne.swift; sourceTree = "<group>"; };
+		026F42F820A5C2490098EC23 /* L1LessonOneTalkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L1LessonOneTalkView.swift; sourceTree = "<group>"; };
+		026F430020A5C53A0098EC23 /* L1LessonTwoTalkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L1LessonTwoTalkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +213,14 @@
 		025B45DC20A08008006849EE /* DigipetCapstone */ = {
 			isa = PBXGroup;
 			children = (
+				026F42F220A5C2480098EC23 /* L1LessonOne.sks */,
+				026F42F720A5C2490098EC23 /* L1LessonOne.swift */,
+				026F42F820A5C2490098EC23 /* L1LessonOneTalkView.swift */,
+				026F42F620A5C2480098EC23 /* L1LessonOneTypeView.swift */,
+				026F42F320A5C2480098EC23 /* L1LessonTwo.sks */,
+				026F42F520A5C2480098EC23 /* L1LessonTwo.swift */,
+				026F42F420A5C2480098EC23 /* L1LessonTwoTypeView.swift */,
+				026F430020A5C53A0098EC23 /* L1LessonTwoTalkView.swift */,
 				0223288820A082C0002A2646 /* Digipet-Bridging-Header.h */,
 				025B461320A080E4006849EE /* RZTransitions */,
 				025B45DD20A08008006849EE /* AppDelegate.swift */,
@@ -457,9 +481,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				025B46A320A08139006849EE /* GameScene.sks in Resources */,
+				026F42FA20A5C2490098EC23 /* L1LessonTwo.sks in Resources */,
 				025B46C520A081D7006849EE /* LaunchScreen.storyboard in Resources */,
 				025B46A720A0816F006849EE /* Plumpfull.ttf in Resources */,
 				025B46C920A0820D006849EE /* Main.storyboard in Resources */,
+				026F42F920A5C2490098EC23 /* L1LessonOne.sks in Resources */,
 				025B46C720A081FA006849EE /* Assets.xcassets in Resources */,
 				025B46A020A0811C006849EE /* Actions.sks in Resources */,
 			);
@@ -495,17 +521,23 @@
 				025B464C20A080E4006849EE /* RZZoomAlphaAnimationController.m in Sources */,
 				025B46C220A081C0006849EE /* LessonTableViewController.swift in Sources */,
 				025B465520A080E4006849EE /* RZVerticalSwipeInteractionController.m in Sources */,
+				026F42FF20A5C2490098EC23 /* L1LessonOneTalkView.swift in Sources */,
+				026F42FB20A5C2490098EC23 /* L1LessonTwoTypeView.swift in Sources */,
 				025B464820A080E4006849EE /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */,
 				025B461220A0809C006849EE /* VoiceRecognition.swift in Sources */,
 				025B465720A080E4006849EE /* RZPinchInteractionController.m in Sources */,
+				026F42FD20A5C2490098EC23 /* L1LessonOneTypeView.swift in Sources */,
+				026F42FC20A5C2490098EC23 /* L1LessonTwo.swift in Sources */,
 				025B464E20A080E4006849EE /* RZCardSlideAnimationController.m in Sources */,
 				025B464F20A080E4006849EE /* RZZoomBlurAnimationController.m in Sources */,
+				026F430120A5C53A0098EC23 /* L1LessonTwoTalkView.swift in Sources */,
 				025B464920A080E4006849EE /* UIImage+RZTransitionsFastImageBlur.m in Sources */,
 				025B46AF20A0819A006849EE /* MainScreen.swift in Sources */,
 				025B46B720A081B2006849EE /* MatchGame.swift in Sources */,
 				025B46B020A0819A006849EE /* LessonTableViewCell.swift in Sources */,
 				025B465420A080E4006849EE /* RZHorizontalInteractionController.m in Sources */,
 				025B465320A080E4006849EE /* RZBaseSwipeInteractionController.m in Sources */,
+				026F42FE20A5C2490098EC23 /* L1LessonOne.swift in Sources */,
 				025B464B20A080E4006849EE /* RZZoomPushAnimationController.m in Sources */,
 				025B46A920A08190006849EE /* GameViewController.swift in Sources */,
 				025B46C120A081C0006849EE /* LessonStartBox.swift in Sources */,

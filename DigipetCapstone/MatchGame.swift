@@ -255,7 +255,7 @@ class MatchGame: UIViewController, SFSpeechRecognizerDelegate {
         }
         flippedNum = random[num]
         currentCard = num
-        (buttons[num] as! UIButton).setImage(cardFlip(card: random[num]), for: .normal)
+        (buttons[num] as UIButton!).setImage(cardFlip(card: random[num]), for: .normal)
         flipped+=1
     }
     
