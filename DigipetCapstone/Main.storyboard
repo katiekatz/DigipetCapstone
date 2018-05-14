@@ -1428,6 +1428,173 @@
             </objects>
             <point key="canvasLocation" x="4342" y="620"/>
         </scene>
+        <!--Play-->
+        <scene sceneID="YrB-jK-paL">
+            <objects>
+                <viewController id="LJK-pN-SFl" customClass="Play" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JRY-nU-O2m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpx-ZE-HeX">
+                                <rect key="frame" x="15" y="30" width="35" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrowicon"/>
+                                <connections>
+                                    <action selector="backButtonTouched:" destination="3eF-DO-C7J" eventType="touchUpInside" id="1r4-pH-TdZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPB-na-mI4">
+                                <rect key="frame" x="325" y="30" width="35" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="menuicon"/>
+                            </button>
+                            <searchBar contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbk-HX-LgW">
+                                <rect key="frame" x="16" y="143" width="343" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wIF-TD-cpm">
+                                <rect key="frame" x="185" y="205" width="5" height="488"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="488" id="7Lq-Pl-ZWI"/>
+                                    <constraint firstAttribute="width" constant="5" id="P2Q-B5-gqA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wGh-n9-wwk">
+                                <rect key="frame" x="15" y="363" width="345" height="5"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="X1A-cT-dxb"/>
+                                    <constraint firstAttribute="width" constant="345" id="bDm-Iq-29W"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LFy-Ep-wfG">
+                                <rect key="frame" x="15" y="527" width="345" height="5"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="345" id="AG8-kA-WbQ"/>
+                                    <constraint firstAttribute="height" constant="5" id="pQt-bX-VSH"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogK-ai-Zsk">
+                                <rect key="frame" x="15" y="205" width="170" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="I0S-2Y-hUN"/>
+                                    <constraint firstAttribute="width" constant="170" id="eAY-C0-K9y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Plumpfull" family="Plumpfull" pointSize="130"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="0.42352941179999998" green="1" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idr-qN-6DS">
+                                <rect key="frame" x="190" y="205" width="170" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="XHg-Qq-9ov"/>
+                                    <constraint firstAttribute="width" constant="170" id="p77-M4-zyX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Plumpfull" family="Plumpfull" pointSize="130"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" red="0.9980736375" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="levelTwoTouched:" destination="3eF-DO-C7J" eventType="touchUpInside" id="Mqr-CD-Qxd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeW-uf-D8V">
+                                <rect key="frame" x="15" y="368" width="170" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="9e9-n2-IL8"/>
+                                    <constraint firstAttribute="width" constant="170" id="bmy-GI-abJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Plumpfull" family="Plumpfull" pointSize="130"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" red="0.98327165839999997" green="0.68216878179999996" blue="0.089898489420000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="levelThreeTouched:" destination="3eF-DO-C7J" eventType="touchUpInside" id="Y7k-5s-MpO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPe-W4-nYz">
+                                <rect key="frame" x="190" y="368" width="170" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="2gG-tM-wFS"/>
+                                    <constraint firstAttribute="width" constant="170" id="rH6-KK-nBc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Plumpfull" family="Plumpfull" pointSize="130"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" red="0.92774504420000004" green="0.1171706691" blue="0.47578930850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="levelFourTouched:" destination="3eF-DO-C7J" eventType="touchUpInside" id="eya-Vs-eOG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQZ-I6-Yo6">
+                                <rect key="frame" x="15" y="513" width="170" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="kEy-Xg-au4"/>
+                                    <constraint firstAttribute="height" constant="158" id="sBo-cn-vOX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Plumpfull" family="Plumpfull" pointSize="130"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" red="0.022412680090000001" green="0.90980714559999998" blue="0.9993131757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="levelFiveTouched:" destination="3eF-DO-C7J" eventType="touchUpInside" id="b5L-wX-5fV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-oZ-nYT">
+                                <rect key="frame" x="190" y="513" width="170" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="pev-3z-Hha"/>
+                                    <constraint firstAttribute="width" constant="170" id="zd9-8Y-ukO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Plumpfull" family="Plumpfull" pointSize="130"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" red="0.98680108789999998" green="0.93241268399999999" blue="0.13197958470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="levelSixTouched:" destination="3eF-DO-C7J" eventType="touchUpInside" id="CQw-Ke-Ab3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="PLAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9x8-ek-LBd">
+                                <rect key="frame" x="91" y="74" width="169" height="60"/>
+                                <fontDescription key="fontDescription" name="Plumpfull" family="Plumpfull" pointSize="65"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4s-Tm-sAu">
+                                <rect key="frame" x="260" y="74" width="24" height="60"/>
+                                <fontDescription key="fontDescription" name="Plumpfull" family="Plumpfull" pointSize="65"/>
+                                <color key="textColor" red="0.4998677373" green="0.2762259245" blue="0.86774939299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wIF-TD-cpm" firstAttribute="top" secondItem="fbk-HX-LgW" secondAttribute="bottom" constant="6" id="1bv-tP-af5"/>
+                            <constraint firstItem="wGh-n9-wwk" firstAttribute="top" secondItem="fbk-HX-LgW" secondAttribute="bottom" constant="164" id="4Co-nk-YAw"/>
+                            <constraint firstItem="UeW-uf-D8V" firstAttribute="top" secondItem="wGh-n9-wwk" secondAttribute="bottom" id="Cbs-jo-wu7"/>
+                            <constraint firstItem="idr-qN-6DS" firstAttribute="top" secondItem="fbk-HX-LgW" secondAttribute="bottom" constant="6" id="DXP-6U-EZo"/>
+                            <constraint firstItem="a4s-Tm-sAu" firstAttribute="leading" secondItem="9x8-ek-LBd" secondAttribute="trailing" id="NWe-H0-WYf"/>
+                            <constraint firstItem="iPe-W4-nYz" firstAttribute="top" secondItem="wGh-n9-wwk" secondAttribute="bottom" id="OUc-gr-YaH"/>
+                            <constraint firstItem="a4s-Tm-sAu" firstAttribute="leading" secondItem="9x8-ek-LBd" secondAttribute="trailing" id="Q2e-46-auN"/>
+                            <constraint firstItem="LFy-Ep-wfG" firstAttribute="top" secondItem="wGh-n9-wwk" secondAttribute="bottom" constant="159" id="RPI-6W-oJL"/>
+                            <constraint firstItem="fbk-HX-LgW" firstAttribute="top" secondItem="9x8-ek-LBd" secondAttribute="bottom" constant="8" id="iSO-1U-tKo"/>
+                            <constraint firstItem="ogK-ai-Zsk" firstAttribute="top" secondItem="fbk-HX-LgW" secondAttribute="bottom" constant="6" id="lr3-30-JzK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sfj-Y8-bUs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xai-mp-TGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1329" y="646"/>
+        </scene>
         <!--Lesson Table View Controller-->
         <scene sceneID="Ou6-77-1Ir">
             <objects>

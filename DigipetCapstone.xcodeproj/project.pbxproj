@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0079CC3220A9B50D002296D8 /* Play.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0079CC3120A9B50D002296D8 /* Play.swift */; };
 		025B45DE20A08008006849EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B45DD20A08008006849EE /* AppDelegate.swift */; };
 		025B45F920A08009006849EE /* DigipetCapstoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B45F820A08009006849EE /* DigipetCapstoneTests.swift */; };
 		025B460420A08009006849EE /* DigipetCapstoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B460320A08009006849EE /* DigipetCapstoneUITests.swift */; };
@@ -79,6 +80,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0079CC3120A9B50D002296D8 /* Play.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Play.swift; sourceTree = "<group>"; };
 		0223288820A082C0002A2646 /* Digipet-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Digipet-Bridging-Header.h"; sourceTree = "<group>"; };
 		025B45DA20A08008006849EE /* DigipetCapstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigipetCapstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		025B45DD20A08008006849EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				025B46BE20A081BF006849EE /* SwiftySKScrollView.swift */,
 				025B46C420A081D6006849EE /* LaunchScreen.storyboard */,
 				025B45EF20A08009006849EE /* Info.plist */,
+				0079CC3120A9B50D002296D8 /* Play.swift */,
 			);
 			path = DigipetCapstone;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				026F42FE20A5C2490098EC23 /* L1LessonOne.swift in Sources */,
 				025B464B20A080E4006849EE /* RZZoomPushAnimationController.m in Sources */,
 				025B46A920A08190006849EE /* GameViewController.swift in Sources */,
+				0079CC3220A9B50D002296D8 /* Play.swift in Sources */,
 				025B46C120A081C0006849EE /* LessonStartBox.swift in Sources */,
 				025B46C020A081C0006849EE /* LessonRow.swift in Sources */,
 				025B464A20A080E4006849EE /* RZTransitionsNavigationController.m in Sources */,
