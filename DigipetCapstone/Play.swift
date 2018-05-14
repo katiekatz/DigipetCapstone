@@ -33,50 +33,50 @@ class Play : UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func levelOneTouched(_ sender: Any) {
+    @IBAction func levelOneTouchedPlay(_ sender: Any) {
         self.transitioningDelegate = RZTransitionsManager.shared()
-        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVC")
-        (nextViewController as! LevelVC).text = "1"
+        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVCPlay")
+        (nextViewController as! LevelVCPlay).text = "1"
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
     }
     
-    @IBAction func levelTwoTouched(_ sender: Any) {
+    @IBAction func levelTwoTouchedPlay(_ sender: Any) {
         self.transitioningDelegate = RZTransitionsManager.shared()
-        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVC")
-        (nextViewController as! LevelVC).text = "2"
+        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVCPlay")
+        (nextViewController as! LevelVCPlay).text = "2"
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
     }
     
-    @IBAction func levelThreeTouched(_ sender: Any) {
+    @IBAction func levelThreeTouchedPlay(_ sender: Any) {
         self.transitioningDelegate = RZTransitionsManager.shared()
-        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVC")
-        (nextViewController as! LevelVC).text = "3"
+        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVCPlay")
+        (nextViewController as! LevelVCPlay).text = "3"
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
     }
     
-    @IBAction func levelFourTouched(_ sender: Any) {
+    @IBAction func levelFourTouchedPlay(_ sender: Any) {
         self.transitioningDelegate = RZTransitionsManager.shared()
-        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVC")
-        (nextViewController as! LevelVC).text = "4"
+        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVCPlay")
+        (nextViewController as! LevelVCPlay).text = "4"
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
     }
     
-    @IBAction func levelFiveTouched(_ sender: Any) {
+    @IBAction func levelFiveTouchedPlay(_ sender: Any) {
         self.transitioningDelegate = RZTransitionsManager.shared()
-        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVC")
-        (nextViewController as! LevelVC).text = "5"
+        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVCPlay")
+        (nextViewController as! LevelVCPlay).text = "5"
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
     }
     
-    @IBAction func levelSixTouched(_ sender: Any) {
+    @IBAction func levelSixTouchedPlay(_ sender: Any) {
         self.transitioningDelegate = RZTransitionsManager.shared()
-        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVC")
-        (nextViewController as! LevelVC).text = "6"
+        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVCPlay")
+        (nextViewController as! LevelVCPlay).text = "6"
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
     }
