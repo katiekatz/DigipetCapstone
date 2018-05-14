@@ -62,7 +62,7 @@ class LessonTableViewController : UITableViewController {
         parent.infoLessonName.text = ib.lesson?.name
         parent.infoVH.text = ib.lesson?.infoVH
         parent.infoGD.text = ib.lesson?.infoGD
-        UIView.animate(withDuration: 1){
+        UIView.animate(withDuration: 0.3){
             print("animating")
             parent.blur.isHidden = false
             parent.infoView.isHidden = false
