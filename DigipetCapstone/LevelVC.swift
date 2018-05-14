@@ -19,7 +19,7 @@ class LevelVC : UIViewController {
     var l6Lessons = [Lesson]()
     
     let lesson1 = Lesson(name: "Basics I", petImg: "china", fileDest: "L1LessonOne", infoVH: "hello, goodbye, yes, no, maybe, okay, please, thank you, you're welcome, good morning...", infoGD: "game desc dnwse fjswie nvweih dhfwseh jd j jwieuuwa ab abaw erfwarf awefaw svawraf aewjn", startDesc: "think and thonk and thunk and think and thonk and thunk and think and thonk and thunk and uwu and hello and is this thing on")!
-    let lesson2 = Lesson(name: "TeSt, how long is this", petImg: "china", fileDest: "L1LessonTwo", infoVH: "vocab vocab vocab najadea aeijfubaw dwfaef", infoGD: "game desc dnwse fjswie nvweih dhfwseh jd j jwieuuwa", startDesc: "think and thonk and thunk and think and thonk and thunk and think and thonk and thunk and uwu and hello and is this thing on")!
+    let lesson2 = Lesson(name: "Basics II", petImg: "china", fileDest: "L1LessonTwo", infoVH: "apple, man, woman, dog, cat, picture, people, draw, sing...", infoGD: "Match cards and say what's on them to collect them.", startDesc: "Learn basic nouns, verbs, and numbers.")!
     let lesson3 = Lesson(name: "testing", petImg: "china", fileDest: "ha2", infoVH: "vocab vocab vocab najadea aeijfubaw dwfaef", infoGD: "game desc dnwse fjswie nvweih dhfwseh jd j jwieuuwa", startDesc: "think and thonk and thunk and think and thonk and thunk and think and thonk and thunk and uwu and hello and is this thing on")!
     let lesson4 = Lesson(name: "bwahaha", petImg: "china", fileDest: "ha", infoVH: "vocab vocab vocab najadea aeijfubaw dwfaef", infoGD: "game desc dnwse fjswie nvweih dhfwseh jd j jwieuuwa", startDesc: "think and thonk and thunk and think and thonk and thunk and think and thonk and thunk and uwu and hello and is this thing on")!
     let lesson5 = Lesson(name: "will this work?", petImg: "china", fileDest: "ha", infoVH: "vocab vocab vocab najadea aeijfubaw dwfaef", infoGD: "game desc dnwse fjswie nvweih dhfwseh jd j jwieuuwa", startDesc: "think and thonk and thunk and think and thonk and thunk and think and thonk and thunk and uwu and hello and is this thing on")!
@@ -58,7 +58,7 @@ class LevelVC : UIViewController {
         }
         
         tableViewController = tableController
-        blur.isHidden = true
+        blur.alpha = 0
         
         infoView.layer.borderColor = UIColor.black.cgColor
         infoView.layer.borderWidth = 3
@@ -77,7 +77,7 @@ class LevelVC : UIViewController {
         infoBackButton.layer.borderWidth = 2
         infoBackButton.layer.backgroundColor = UIColor(red: 249/255.0, green: 249/255.0, blue: 249/255.0, alpha: 1).cgColor
         
-        infoView.isHidden = true
+        infoView.alpha = 0
     
         
         //lessons test code
@@ -116,19 +116,15 @@ class LevelVC : UIViewController {
         }
         
         if showInfo == "yes" {
-            blur.isHidden = false
-            infoView.isHidden = false
+            blur.alpha = 1
+            infoView.alpha = 1
             infoStartButton.lesson = lessonFocus
         }
         
     }
 
     @IBAction func backButtonTouched(_ sender: Any) {
-        UIView.animate(withDuration: 1){
-            print("animating")
-            self.blur.isHidden = true
-            self.infoView.isHidden = true
-        }
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func startButtonTapped(_ sender: Any) {
@@ -154,7 +150,6 @@ class LevelVC : UIViewController {
             self.infoView.alpha = 0
         }
         showInfo = "nil"
-        self.dismiss(animated: true, completion: nil)
     }
     
     override var shouldAutorotate: Bool {
