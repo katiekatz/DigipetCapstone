@@ -13,6 +13,7 @@
 		0079CC3820A9BBA1002296D8 /* GameStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0079CC3720A9BBA1002296D8 /* GameStart.swift */; };
 		0079CC3A20A9BC40002296D8 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0079CC3920A9BC40002296D8 /* GameTableViewCell.swift */; };
 		0079CC3C20A9BC74002296D8 /* GameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0079CC3B20A9BC74002296D8 /* GameTableViewController.swift */; };
+		0200321920AA5DE0003FB481 /* Play2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0200321820AA5DE0003FB481 /* Play2.swift */; };
 		025B45DE20A08008006849EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B45DD20A08008006849EE /* AppDelegate.swift */; };
 		025B45F920A08009006849EE /* DigipetCapstoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B45F820A08009006849EE /* DigipetCapstoneTests.swift */; };
 		025B460420A08009006849EE /* DigipetCapstoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B460320A08009006849EE /* DigipetCapstoneUITests.swift */; };
@@ -91,6 +92,7 @@
 		0079CC3720A9BBA1002296D8 /* GameStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStart.swift; sourceTree = "<group>"; };
 		0079CC3920A9BC40002296D8 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 		0079CC3B20A9BC74002296D8 /* GameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewController.swift; sourceTree = "<group>"; };
+		0200321820AA5DE0003FB481 /* Play2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Play2.swift; sourceTree = "<group>"; };
 		0223288820A082C0002A2646 /* Digipet-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Digipet-Bridging-Header.h"; sourceTree = "<group>"; };
 		025B45DA20A08008006849EE /* DigipetCapstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigipetCapstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		025B45DD20A08008006849EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				025B46B420A081B1006849EE /* Learn.swift */,
 				025B46B520A081B2006849EE /* Lesson.swift */,
 				025B46AB20A0819A006849EE /* MainScreen.swift */,
+				0200321820AA5DE0003FB481 /* Play2.swift */,
 				025B46C820A0820D006849EE /* Main.storyboard */,
 				0079CC3320A9B8F6002296D8 /* LevelVCPlay.swift */,
 				025B46AD20A0819A006849EE /* SilhouetteGame.swift */,
@@ -533,6 +536,7 @@
 				025B465220A080E4006849EE /* RZCirclePushAnimationController.m in Sources */,
 				025B46C320A081C0006849EE /* SwiftySKScrollView.swift in Sources */,
 				025B46AE20A0819A006849EE /* LevelVC.swift in Sources */,
+				0200321920AA5DE0003FB481 /* Play2.swift in Sources */,
 				025B465620A080E4006849EE /* RZOverscrollInteractionController.m in Sources */,
 				025B46B920A081B2006849EE /* Lesson.swift in Sources */,
 				025B465120A080E4006849EE /* RZShrinkZoomAnimationController.m in Sources */,

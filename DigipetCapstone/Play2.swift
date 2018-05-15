@@ -1,27 +1,28 @@
 //
-//  Play.swift
+//  Play2.swift
 //  DigipetCapstone
 //
-//  Created by Emma Ingallinera on 5/14/18.
+//  Created by Katie Katz on 5/14/18.
 //  Copyright © 2018 Katie Katz. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class Play : UIViewController {
-    
+class Play2 : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
+    
     @IBAction func backButtonTouched(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func levelOneTouchedPlay(_ sender: Any) {
+    
+    @IBAction func levelOneTouched(_ sender: Any) {
         self.transitioningDelegate = RZTransitionsManager.shared()
         let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVCPlay")
         (nextViewController as! LevelVCPlay).text = "1"
@@ -29,45 +30,46 @@ class Play : UIViewController {
         self.present(nextViewController!, animated:true) {}
     }
     
-    @IBAction func levelTwoTouchedPlay(_ sender: Any) {
+    @IBAction func levelTwoTouched(_ sender: Any) {
         self.transitioningDelegate = RZTransitionsManager.shared()
         let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVCPlay")
-        (nextViewController as! LevelVCPlay).text = "2"
+        (nextViewController as! LevelVCPlay).text = "1"
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
     }
     
-    @IBAction func levelThreeTouchedPlay(_ sender: Any) {
+    @IBAction func levelThreeTouched(_ sender: Any) {
         self.transitioningDelegate = RZTransitionsManager.shared()
         let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVCPlay")
-        (nextViewController as! LevelVCPlay).text = "3"
+        (nextViewController as! LevelVCPlay).text = "1"
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
     }
     
-    @IBAction func levelFourTouchedPlay(_ sender: Any) {
+    @IBAction func levelFourTouched(_ sender: Any) {
         self.transitioningDelegate = RZTransitionsManager.shared()
         let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVCPlay")
-        (nextViewController as! LevelVCPlay).text = "4"
+        (nextViewController as! LevelVCPlay).text = "1"
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
     }
     
-    @IBAction func levelFiveTouchedPlay(_ sender: Any) {
+    @IBAction func levelFiveTouched(_ sender: Any) {
         self.transitioningDelegate = RZTransitionsManager.shared()
         let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVCPlay")
-        (nextViewController as! LevelVCPlay).text = "5"
+        (nextViewController as! LevelVCPlay).text = "1"
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
     }
     
-    @IBAction func levelSixTouchedPlay(_ sender: Any) {
+    @IBAction func levelSixTouched(_ sender: Any) {
         self.transitioningDelegate = RZTransitionsManager.shared()
         let nextViewController = storyboard?.instantiateViewController(withIdentifier: "levelVCPlay")
-        (nextViewController as! LevelVCPlay).text = "6"
+        (nextViewController as! LevelVCPlay).text = "1"
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
     }
+    
     
     override var shouldAutorotate: Bool {
         return true
@@ -89,4 +91,5 @@ class Play : UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
 }
