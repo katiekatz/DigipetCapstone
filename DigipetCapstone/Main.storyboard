@@ -41,10 +41,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grassbackground" translatesAutoresizingMaskIntoConstraints="NO" id="ydX-lT-IpQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skybackground" translatesAutoresizingMaskIntoConstraints="NO" id="ydX-lT-IpQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="YwW-rS-RRZ">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="YwW-rS-RRZ">
                                 <rect key="frame" x="-244" y="0.0" width="743" height="471"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yp-H9-bxo">
@@ -54,7 +54,7 @@
                                     <action selector="playButtonTouched:" destination="sgx-Yj-ML6" eventType="touchUpInside" id="zDw-Kd-xky"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basicskyline" translatesAutoresizingMaskIntoConstraints="NO" id="jU8-6F-O88">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basicskyline" translatesAutoresizingMaskIntoConstraints="NO" id="jU8-6F-O88">
                                 <rect key="frame" x="-7" y="389" width="399" height="82"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="B3H-ZS-3LN"/>
@@ -2006,13 +2006,13 @@
         <image name="basicskyline" width="789" height="150"/>
         <image name="china" width="1251" height="1728"/>
         <image name="clouds" width="1138" height="801"/>
-        <image name="grassbackground" width="750" height="1334"/>
         <image name="learnbutton" width="214" height="220"/>
         <image name="logo" width="586" height="456"/>
         <image name="menuicon" width="67" height="49"/>
         <image name="playbutton" width="215" height="220"/>
         <image name="settings" width="72" height="73"/>
         <image name="skipButton" width="157" height="160"/>
+        <image name="skybackground" width="750" height="1334"/>
         <image name="talk" width="214" height="219"/>
     </resources>
     <inferredMetricsTieBreakers>
