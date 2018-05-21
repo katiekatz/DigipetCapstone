@@ -1149,6 +1149,7 @@
                                 <state key="normal" image="arrowicon"/>
                                 <connections>
                                     <action selector="backButtonTouched:" destination="bP0-oN-pva" eventType="touchUpInside" id="402-A7-Ygs"/>
+                                    <action selector="backButtonTouched:" destination="L7F-Tt-hSw" eventType="touchUpInside" id="NWf-1Y-AEk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AC-63-L2K">
@@ -1169,7 +1170,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="122" id="Ld9-30-XHu"/>
                                 </constraints>
-                                <state key="normal" image="talk"/>
+                                <state key="normal" image="typeButton"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="L7F-Tt-hSw" eventType="touchDown" id="azf-Vw-aBh"/>
                                 </connections>
@@ -1225,6 +1226,7 @@
                                 </constraints>
                                 <state key="normal" image="arrowicon"/>
                                 <connections>
+                                    <action selector="backButtonTouched:" destination="uBz-N7-agO" eventType="touchUpInside" id="XGN-p9-AJM"/>
                                     <action selector="backButtonTouched:" destination="bP0-oN-pva" eventType="touchUpInside" id="gWR-mk-Y3U"/>
                                 </connections>
                             </button>
@@ -1300,6 +1302,7 @@
                                 <state key="normal" image="arrowicon"/>
                                 <connections>
                                     <action selector="backButtonTouched:" destination="bP0-oN-pva" eventType="touchUpInside" id="3FI-mY-805"/>
+                                    <action selector="backButtonTouched:" destination="IHc-2E-s2v" eventType="touchUpInside" id="hec-61-9BD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsd-D5-3QH">
@@ -1373,6 +1376,7 @@
                                 </constraints>
                                 <state key="normal" image="arrowicon"/>
                                 <connections>
+                                    <action selector="backButtonTouched:" destination="pAc-Py-sfW" eventType="touchUpInside" id="iVC-GF-bYN"/>
                                     <action selector="backButtonTouched:" destination="bP0-oN-pva" eventType="touchUpInside" id="qad-ti-mof"/>
                                 </connections>
                             </button>
@@ -1394,7 +1398,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="122" id="5Sz-58-7wl"/>
                                 </constraints>
-                                <state key="normal" image="talk"/>
+                                <state key="normal" image="typeButton"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="pAc-Py-sfW" eventType="touchDown" id="DN5-9g-F0J"/>
                                 </connections>
@@ -2031,6 +2035,7 @@
         <image name="skipButton" width="157" height="160"/>
         <image name="skybackground" width="750" height="1334"/>
         <image name="talk" width="214" height="219"/>
+        <image name="typeButton" width="214" height="218"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ksP-Zl-vRb"/>

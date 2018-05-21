@@ -24,6 +24,10 @@ class L1LessonOneTypeView : UIViewController {
         //myView.presentScene(myScene)
     }
     
+    @IBAction func backButtonTouched(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         //self.searchBar.endEditing(true)
     }
