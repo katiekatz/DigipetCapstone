@@ -24,6 +24,10 @@ class L1LessonOneTalkView : UIViewController, SFSpeechRecognizerDelegate {
     var recognitionTask: SFSpeechRecognitionTask?
     var isRecording = false
     
+    @IBAction func backButtonTouched(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     //var detectedText : String = ""
     
     func recordAndRecognizeSpeech() {
@@ -114,6 +118,7 @@ class L1LessonOneTalkView : UIViewController, SFSpeechRecognizerDelegate {
         } else {
             self.recordAndRecognizeSpeech()
             isRecording = true
+
         }
     }
     

@@ -26,6 +26,9 @@ class L1LessonTwoTypeView : UIViewController {
         //myView.presentScene(myScene)
     }
 
+    @IBAction func backButtonTouched(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func answerDone(_ sender: UITextField) {
         (myView.scene as! L1LessonTwo).checkAnswer(answer: textField.text!)
