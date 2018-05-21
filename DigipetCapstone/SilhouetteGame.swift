@@ -31,6 +31,7 @@ class Guesser {
 }
 
 class SilhouetteGame : UIViewController, SFSpeechRecognizerDelegate {
+    var lang = String()
     let audioEngine = AVAudioEngine()
     var speechRecognizer = SFSpeechRecognizer()
     var request = SFSpeechAudioBufferRecognitionRequest()
@@ -185,7 +186,22 @@ class SilhouetteGame : UIViewController, SFSpeechRecognizerDelegate {
         
         
         var looper = false
-        for phrase in (guess?.sp)! {
+        var option = [String]()
+        switch lang {
+        case "ch":
+            option = (guess?.ch)!
+            break
+        case "sp":
+            option = (guess?.sp)!
+            break
+        case "fr":
+            option = (guess?.fr)!
+            break
+        default:
+            option = (guess?.ch)!
+            break
+        }
+        for phrase in (option) {
             print("possible phrase: " + phrase)
             if phrase.contains(detectedText) {
                 looper = true
@@ -213,7 +229,26 @@ class SilhouetteGame : UIViewController, SFSpeechRecognizerDelegate {
     
     override func viewDidLoad() {
         
-        speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "es"))
+        if let langStr = UserDefaults.standard.string(forKey: "language") {
+            speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: langStr))
+            switch langStr {
+            case "zh_Hans":
+                lang = "ch"
+                break
+            case "fr_FR":
+                lang = "fr"
+                break
+            case "es_ES":
+                lang = "es"
+                break
+            default:
+                lang = "ch"
+                
+            }
+        } else {
+            speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "zh_Hans"))
+            lang = "ch"
+        }
         
         textView.layer.borderColor = UIColor.black.cgColor
         textView.layer.borderWidth = 2

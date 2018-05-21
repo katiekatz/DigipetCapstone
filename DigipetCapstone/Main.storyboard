@@ -77,6 +77,9 @@
                                     <constraint firstAttribute="width" constant="37" id="wGl-VY-fOn"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="settings"/>
+                                <connections>
+                                    <segue destination="g42-Gh-Bt8" kind="show" id="VW1-Fk-NI9"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="china" translatesAutoresizingMaskIntoConstraints="NO" id="cEk-cz-0DN">
                                 <rect key="frame" x="107" y="301" width="161" height="220"/>
@@ -1998,6 +2001,91 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8d-ha-Gpy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2117.5999999999999" y="1287.7061469265368"/>
+        </scene>
+        <!--Settings Page-->
+        <scene sceneID="xit-P4-hCc">
+            <objects>
+                <viewController id="g42-Gh-Bt8" customClass="SettingsPage" customModule="DigipetCapstone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BjY-aL-XhH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huX-2t-55q">
+                                <rect key="frame" x="274" y="318" width="54" height="30"/>
+                                <state key="normal" title="Español">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressSpanish:" destination="g42-Gh-Bt8" eventType="touchUpInside" id="lrV-Um-z9x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rg9-tW-qj0">
+                                <rect key="frame" x="159" y="318" width="58" height="30"/>
+                                <state key="normal" title="Français">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressFrench:" destination="g42-Gh-Bt8" eventType="touchUpInside" id="L3m-kl-DnU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQh-KD-nrf">
+                                <rect key="frame" x="16" y="501" width="34" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sgx-Yj-ML6" kind="show" id="5Wb-RT-heE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwd-H1-lx7">
+                                <rect key="frame" x="57" y="318" width="31" height="30"/>
+                                <state key="normal" title="中文">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressChinese:" destination="g42-Gh-Bt8" eventType="touchUpInside" id="Exw-jx-OVv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CURRENT LANGUAGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcO-se-kBT">
+                                <rect key="frame" x="32" y="69" width="311" height="28"/>
+                                <fontDescription key="fontDescription" name="Plumpfull" family="Plumpfull" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yy-ZG-G1o">
+                                <rect key="frame" x="172" y="146" width="31" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1yy-ZG-G1o" firstAttribute="centerX" secondItem="oKp-7N-Pfn" secondAttribute="centerX" id="0g0-ap-whM"/>
+                            <constraint firstItem="oKp-7N-Pfn" firstAttribute="bottom" secondItem="LQh-KD-nrf" secondAttribute="bottom" constant="136" id="7aT-Un-QXc"/>
+                            <constraint firstItem="huX-2t-55q" firstAttribute="leading" secondItem="rg9-tW-qj0" secondAttribute="trailing" constant="57" id="DTn-xw-1gF"/>
+                            <constraint firstItem="rg9-tW-qj0" firstAttribute="centerX" secondItem="oKp-7N-Pfn" secondAttribute="centerX" id="Ek9-Wb-QV5"/>
+                            <constraint firstItem="jwd-H1-lx7" firstAttribute="centerY" secondItem="BjY-aL-XhH" secondAttribute="centerY" id="IrM-QY-55l"/>
+                            <constraint firstItem="rg9-tW-qj0" firstAttribute="leading" secondItem="jwd-H1-lx7" secondAttribute="trailing" constant="71" id="N1z-41-7q5"/>
+                            <constraint firstItem="LcO-se-kBT" firstAttribute="top" secondItem="oKp-7N-Pfn" secondAttribute="top" constant="49" id="OZL-72-d7S"/>
+                            <constraint firstItem="LcO-se-kBT" firstAttribute="centerX" secondItem="BjY-aL-XhH" secondAttribute="centerX" id="one-kV-KTl"/>
+                            <constraint firstItem="rg9-tW-qj0" firstAttribute="baseline" secondItem="huX-2t-55q" secondAttribute="baseline" id="q0B-Je-YOC"/>
+                            <constraint firstItem="1yy-ZG-G1o" firstAttribute="top" secondItem="LcO-se-kBT" secondAttribute="bottom" constant="49" id="uBw-nT-aPj"/>
+                            <constraint firstItem="huX-2t-55q" firstAttribute="baseline" secondItem="jwd-H1-lx7" secondAttribute="baseline" id="upC-x9-lKz"/>
+                            <constraint firstItem="LQh-KD-nrf" firstAttribute="leading" secondItem="BjY-aL-XhH" secondAttribute="leadingMargin" id="wEC-tY-vzH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oKp-7N-Pfn"/>
+                    </view>
+                    <connections>
+                        <outlet property="chineseButton" destination="jwd-H1-lx7" id="NvD-Bh-CDz"/>
+                        <outlet property="currentLanguage" destination="1yy-ZG-G1o" id="RL0-0E-9t8"/>
+                        <outlet property="frenchButton" destination="rg9-tW-qj0" id="d0N-aE-gpd"/>
+                        <outlet property="spanishButton" destination="huX-2t-55q" id="Egb-pF-fV0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75N-7H-l41" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525.60000000000002" y="-837.03148425787117"/>
         </scene>
     </scenes>
     <resources>

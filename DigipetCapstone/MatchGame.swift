@@ -11,6 +11,7 @@ import Speech
 
 class MatchGame: UIViewController, SFSpeechRecognizerDelegate {
     
+    var langArray = Int()
     let audioEngine = AVAudioEngine()
     var speechRecognizer = SFSpeechRecognizer()
     var request = SFSpeechAudioBufferRecognitionRequest()
@@ -134,7 +135,26 @@ class MatchGame: UIViewController, SFSpeechRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "zh"))
+        if let lang = UserDefaults.standard.string(forKey: "language") {
+            speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: lang))
+            switch lang {
+            case "zh_Hans":
+                langArray = 0
+                break
+            case "fr_FR":
+                langArray = 1
+                break
+            case "es_ES":
+                langArray = 2
+                break
+            default:
+                langArray = 0
+                
+            }
+        } else {
+            speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "zh_Hans"))
+            langArray = 0
+        }
         
         //print(random)
         random = randomHalf + randomHalf
@@ -268,7 +288,7 @@ class MatchGame: UIViewController, SFSpeechRecognizerDelegate {
             recognitionTask?.cancel()
             isRecording = false
             
-            var check = transKey[random[matchNum]][0]
+            var check = transKey[random[matchNum]][langArray]
             var looper = false
             for phrase in check {
                 if phrase.contains(detectedText){
