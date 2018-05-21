@@ -17,9 +17,13 @@ class GameTableViewController : UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         tableView.tableFooterView = UIView()
         
         tableView.alwaysBounceVertical = false
+        
+        tableView.dataSource = self
+        tableView.delegate = self
         
     }
     
@@ -39,6 +43,11 @@ class GameTableViewController : UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? GameTableViewCell  else {
             fatalError("The dequeued cell is not an instance of GameTableViewCell.")
         }
+        
+        print("----------")
+        print(cell)
+        print("----------")
+        
         
         // Fetches the appropriate meal for the data source layout.
         let minigame = minigameList[indexPath.row]

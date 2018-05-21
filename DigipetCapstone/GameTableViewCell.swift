@@ -23,10 +23,15 @@ class GameTableViewCell : UITableViewCell {
         
         self.selectionStyle = .none
         
-        startButton.layer.cornerRadius = 14
-        startButton.layer.masksToBounds = true
-        startButton.layer.borderWidth = 2
-        startButton.layer.backgroundColor = UIColor(red: 249/255.0, green: 249/255.0, blue: 249/255.0, alpha: 1).cgColor
+        print(self)
+        print(self.startButton == nil)
+        
+        if startButton != nil {
+            startButton.layer.cornerRadius = 14
+            startButton.layer.masksToBounds = true
+            startButton.layer.borderWidth = 2
+            startButton.layer.backgroundColor = UIColor(red: 249/255.0, green: 249/255.0, blue: 249/255.0, alpha: 1).cgColor
+        }
         
         
     }
