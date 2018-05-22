@@ -32,12 +32,34 @@ class L1LessonTwo: SKScene {
     var pointAction: SKAction!
     var walkOut: SKAction!
     
+    var lang : Int = 0
+    
     var array: [() -> ()] = []
-    var correctAnswers: [String] = []
+    var correctAnswers: [[String]] = []
     var counter: Int = 0
     var animationRunning = false
     
+    var prompts: [[String]] = [["你好", "我有","三个苹果","我有","几个苹果？" ,"我有","六只狗","我有","几只狗？","我有","四只猫","我有","几只猫？","我有","九辆车","我有","七本书","怎么说","谢谢！","再见！","你好","在这张照片里","有几个人？","几个人","跑步？","非常好！","再见！"],["¡Hola!", "Tengo", "tres manzanas","¿Cuántas manzanas","tengo?" ,"Tengo", "seis perros","¿Cuántos perros", "tengo?","Tengo", "cuatro gatos","¿Cuántos gatos", "tengo?","Tengo", "nueve autos", "Tengo", "siete libros","¿Cómo se dice","¡Gracias！","Adiós！","¡Hola!","¿Cuántas personas", "hay en esta foto?","¿Cuántas personas", "corren?","¡Asombroso!", "¡Adiós!"],["Bonjour!", "J'ai", "trois pommes", "J'ai", "combien de pommes?", "J'ai","six chiens","J'ai","combien de chiens?","J'ai","quatre chats","J'ai","combien de chats","J'ai","neuf voitures", "J'ai","sept livres","Comment dit-on","Merci!","Au revoir!","Bonjour!","Il y a combien de gens","sur cette photo?","Combien de gens","courent?","Bon trvail!","Au revoir!"]]
+    
     override func didMove(to view: SKView) {
+        if let language = UserDefaults.standard.string(forKey: "language") {
+            switch language {
+            case "zh_Hans":
+                lang = 0
+                break
+            case "fr_FR":
+                lang = 2
+                break
+            case "es_ES":
+                lang = 1
+                break
+            default:
+                lang = 0
+                
+            }
+        } else {
+            lang = 0
+        }
         done = false
         
         rotateAction = SKAction.sequence([SKAction.rotate(byAngle: 0.2, duration: 0.5), SKAction.rotate(byAngle: -0.2, duration: 0.5)])
@@ -210,7 +232,7 @@ class L1LessonTwo: SKScene {
         pointer.isHidden = true
         
         array = [entranceAnimation, math1, math2, math3, ask1, ask2, bigNumber, goodbye1, reentrance, people1, people2, goodbye2]
-        correctAnswers = ["hello", "one", "two", "five", "how many cars do you have", "how many books do you have", "one thousand", "goodbye", "hello", "eight", "three", "goodbye"]
+        correctAnswers = [["你好", "1个苹果", "2只狗", "5只猫", "你有几辆车", "你有几本书", "一千", "再见", "你好", "8个人", "3个人", "再见"],["hola", "una manzana","dos perros","cinco gatos","cuántos autos tienes","¿cuántos libros tienes?","mil","adiós","hola", "8 personas", "3 personas", "adiós"],["bonjour","une pomme", "deux chiens", "cinq chats","Combien de voitures as-tu?","Combien de livres as-tu?","mille","au revoir","bonjour","8 gens", "3 gens", "au revoir"]]
         runLesson()
     }
 
@@ -237,7 +259,7 @@ class L1LessonTwo: SKScene {
             timer in
             
             self.sBubble1.isHidden = false
-            self.pet1Text1.text = "Hello!"
+            self.pet1Text1.text = self.prompts[self.lang][0]
             self.pet1Text2.text = ""
             self.pet1Text1.isHidden = false
             self.pet1Text2.isHidden = false
@@ -266,8 +288,8 @@ class L1LessonTwo: SKScene {
             text.isHidden = false
         }
         
-        pet1Text1.text = "I have"
-        pet1Text2.text = "three apples!"
+        pet1Text1.text = self.prompts[self.lang][1]
+        pet1Text2.text = self.prompts[self.lang][2]
         
         Timer.scheduledTimer(withTimeInterval: 2, repeats: false) {
             timer in
@@ -278,8 +300,8 @@ class L1LessonTwo: SKScene {
             Timer.scheduledTimer(withTimeInterval: 1, repeats: false) {
                 timer in
                 
-                self.pet1Text1.text = "How many apples"
-                self.pet1Text2.text = "do I have?"
+                self.pet1Text1.text = self.prompts[self.lang][3]
+                self.pet1Text2.text = self.prompts[self.lang][4]
                 
                 Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                     timer in
@@ -303,8 +325,8 @@ class L1LessonTwo: SKScene {
             }
         }
         
-        pet1Text1.text = "I have"
-        pet1Text2.text = "six dogs!"
+        pet1Text1.text = self.prompts[self.lang][5]
+        pet1Text2.text = self.prompts[self.lang][6]
         
         Timer.scheduledTimer(withTimeInterval: 2, repeats: false) {
             timer in
@@ -317,8 +339,8 @@ class L1LessonTwo: SKScene {
             Timer.scheduledTimer(withTimeInterval: 1, repeats: false) {
                 timer in
                 
-                self.pet1Text1.text = "How many dogs"
-                self.pet1Text2.text = "do I have?"
+                self.pet1Text1.text = self.prompts[self.lang][7]
+                self.pet1Text2.text = self.prompts[self.lang][8]
                 
                 Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                     timer in
@@ -341,8 +363,8 @@ class L1LessonTwo: SKScene {
             }
         }
         
-        pet1Text1.text = "I have"
-        pet1Text2.text = "four cats!"
+        pet1Text1.text = self.prompts[self.lang][9]
+        pet1Text2.text = self.prompts[self.lang][10]
         
         Timer.scheduledTimer(withTimeInterval: 2, repeats: false) {
             timer in
@@ -352,8 +374,8 @@ class L1LessonTwo: SKScene {
             Timer.scheduledTimer(withTimeInterval: 1, repeats: false) {
                 timer in
                 
-                self.pet1Text1.text = "How many cats"
-                self.pet1Text2.text = "do I have?"
+                self.pet1Text1.text = self.prompts[self.lang][11]
+                self.pet1Text2.text = self.prompts[self.lang][12]
                 
                 Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                     timer in
@@ -445,8 +467,8 @@ class L1LessonTwo: SKScene {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false) {
             timer in
             
-            self.pet1Text1.text = "How do you"
-            self.pet1Text2.text = "say \"1000\"?"
+            self.pet1Text1.text = self.prompts[self.lang][17]
+            self.pet1Text2.text = "\"1000\"?"
 
                 
                 Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
@@ -466,8 +488,8 @@ class L1LessonTwo: SKScene {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false) {
             timer in
             
-            self.pet1Text1.text = "Thank you."
-            self.pet1Text2.text = "Goodbye!"
+            self.pet1Text1.text = self.prompts[self.lang][18]
+            self.pet1Text2.text = self.prompts[self.lang][19]
             
             Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                 timer in
@@ -498,7 +520,7 @@ class L1LessonTwo: SKScene {
             Timer.scheduledTimer(withTimeInterval: 3, repeats: false) {
                 timer in
                 self.sBubble1.isHidden = false
-                self.pet1Text1.text = "Hello!"
+                self.pet1Text1.text = self.prompts[self.lang][20]
                 
                 Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                     timer in
@@ -533,8 +555,8 @@ class L1LessonTwo: SKScene {
                 }
             }
             
-            self.pet1Text1.text = "How many people"
-            self.pet1Text2.text = "are in this picture?"
+            self.pet1Text1.text = self.prompts[self.lang][21]
+            self.pet1Text2.text = self.prompts[self.lang][22]
             
             Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                 timer in
@@ -554,8 +576,8 @@ class L1LessonTwo: SKScene {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false) {
             timer in
             
-            self.pet1Text1.text = "How many people"
-            self.pet1Text2.text = "are running?"
+            self.pet1Text1.text = self.prompts[self.lang][23]
+            self.pet1Text2.text = self.prompts[self.lang][24]
             
             Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                 timer in
@@ -577,8 +599,8 @@ class L1LessonTwo: SKScene {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false) {
             timer in
             
-            self.pet1Text1.text = "Great job!"
-            self.pet1Text2.text = "Goodbye!"
+            self.pet1Text1.text = self.prompts[self.lang][25]
+            self.pet1Text2.text = self.prompts[self.lang][26]
             self.done = true
             Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                 timer in
@@ -596,7 +618,7 @@ class L1LessonTwo: SKScene {
     }
     
     func checkAnswer(answer: String) -> Bool {
-        if (answer.lowercased() == correctAnswers[counter].lowercased()) {
+        if (answer.lowercased() == correctAnswers[lang][counter].lowercased()) {
             nextPrompt()
             return true
         }

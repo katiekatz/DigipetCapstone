@@ -47,10 +47,10 @@ class L1LessonOne: SKScene {
                 lang = 0
                 break
             case "fr_FR":
-                lang = 1
+                lang = 2
                 break
             case "es_ES":
-                lang = 2
+                lang = 1
                 break
             default:
                 lang = 0
