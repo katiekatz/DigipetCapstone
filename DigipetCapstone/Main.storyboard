@@ -130,6 +130,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gBK-gl-mix"/>
                     </view>
+                    <connections>
+                        <outlet property="pet" destination="cEk-cz-0DN" id="wO7-lR-IxN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tV-qe-Dkp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

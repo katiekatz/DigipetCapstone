@@ -11,15 +11,16 @@ import UIKit
 
 class MainScreen : UIViewController {
     
+    @IBOutlet weak var pet: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         RZTransitionsManager.shared().defaultPresentDismissAnimationController = RZCardSlideAnimationController()
         RZTransitionsManager.shared().defaultPushPopAnimationController = RZCardSlideAnimationController()
         
     }
+    
     override var shouldAutorotate: Bool {
         return true
     }
@@ -41,6 +42,7 @@ class MainScreen : UIViewController {
     @IBAction func settingsButtonTouched(_ sender: Any) {
         self.transitioningDelegate = RZTransitionsManager.shared()
         let nextViewController = storyboard?.instantiateViewController(withIdentifier: "settings")
+        (nextViewController as! SettingsPage).mainScreen = self
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
     }

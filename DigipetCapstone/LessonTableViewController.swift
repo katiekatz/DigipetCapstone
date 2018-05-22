@@ -13,6 +13,8 @@ class LessonTableViewController : UITableViewController {
     var lessonNumber : String = "0"
     var lessonList = [Lesson]()
     var color : CGColor?
+    var lang = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,25 @@ class LessonTableViewController : UITableViewController {
         tableView.tableFooterView = UIView()
         
         tableView.alwaysBounceVertical = false
+        
+        if let language = UserDefaults.standard.string(forKey: "language") {
+            switch language {
+            case "zh_Hans":
+                lang = 0
+                break
+            case "fr_FR":
+                lang = 2
+                break
+            case "es_ES":
+                lang = 1
+                break
+            default:
+                lang = 0
+                
+            }
+        } else {
+            lang = 0
+        }
         
     }
     
@@ -44,7 +65,7 @@ class LessonTableViewController : UITableViewController {
         let lesson = lessonList[indexPath.row]
         
         cell.lessonName.text = lesson.name
-        cell.petImg.image = UIImage(named: lesson.petImg)
+        cell.petImg.image = UIImage(named: lesson.petImg[lang])
         cell.startButton.lesson = lesson
         cell.startButton.layer.borderColor = color
         return cell
