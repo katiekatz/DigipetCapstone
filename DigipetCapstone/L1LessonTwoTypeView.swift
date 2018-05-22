@@ -31,7 +31,19 @@ class L1LessonTwoTypeView : UIViewController {
     }
     
     @IBAction func answerDone(_ sender: UITextField) {
-        (myView.scene as! L1LessonTwo).checkAnswer(answer: textField.text!)
+        let correct: Bool = (myView.scene as! L1LessonTwo).checkAnswer(answer: textField.text!)
+        let done: Bool! = (myView.scene as! L1LessonTwo).isDone()
+        
+        if (correct) {
+            textField.text = ""
+        }
+        
+        if (correct && done) {
+            self.transitioningDelegate = RZTransitionsManager.shared()
+            let nextViewController = storyboard?.instantiateViewController(withIdentifier: "matchGame")
+            nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
+            self.present(nextViewController!, animated: true) {}
+        }
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {

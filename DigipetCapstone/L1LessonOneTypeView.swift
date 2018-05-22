@@ -34,7 +34,19 @@ class L1LessonOneTypeView : UIViewController {
     
     @IBAction func answerDone(_ sender: UITextField) {
         //myScene.checkAnswer(answer: textField.text!)
-        (myView.scene as! L1LessonOne).checkAnswer(answer: textField.text!)
+        let correct: Bool = (myView.scene as! L1LessonOne).checkAnswer(answer: textField.text!)
+        let done: Bool! = (myView.scene as! L1LessonOne).isDone()
+        
+        if (correct) {
+            textField.text = ""
+        }
+        
+        if (correct && done) {
+            self.transitioningDelegate = RZTransitionsManager.shared()
+            let nextViewController = storyboard?.instantiateViewController(withIdentifier: "silhouetteGame")
+            nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
+            self.present(nextViewController!, animated: true) {}
+        }
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {

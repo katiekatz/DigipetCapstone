@@ -108,10 +108,26 @@ class L1LessonTwoTalkView : UIViewController, SFSpeechRecognizerDelegate {
             audioEngine.inputNode.removeTap(onBus: 0)
             recognitionTask?.cancel()
             isRecording = false
-            (myView.scene as! L1LessonTwo).checkAnswer(answer: textField.text!)
+            
+            talkButton.setImage(UIImage(named: "talk"), for: UIControlState.normal)
+            let correct: Bool = (myView.scene as! L1LessonTwo).checkAnswer(answer: textField.text!)
+            let done: Bool! = (myView.scene as! L1LessonTwo).isDone()
+            
+            if (correct) {
+                textField.text = ""
+            }
+            
+            if (correct && done) {
+                self.transitioningDelegate = RZTransitionsManager.shared()
+                let nextViewController = storyboard?.instantiateViewController(withIdentifier: "matchGame")
+                nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
+                self.present(nextViewController!, animated: true) {}
+            }
+            
         } else {
             self.recordAndRecognizeSpeech()
             isRecording = true
+            talkButton.setImage(UIImage(named: "talkPressed"), for: UIControlState.normal)
         }
     }
     

@@ -12,6 +12,8 @@ import UIKit
 import Foundation
 
 class L1LessonTwo: SKScene {
+    var done: Bool!
+    
     var Pet1: SKSpriteNode!
     var sBubble1: SKSpriteNode!
     var pet1Text1: SKLabelNode!
@@ -36,6 +38,8 @@ class L1LessonTwo: SKScene {
     var animationRunning = false
     
     override func didMove(to view: SKView) {
+        done = false
+        
         rotateAction = SKAction.sequence([SKAction.rotate(byAngle: 0.2, duration: 0.5), SKAction.rotate(byAngle: -0.2, duration: 0.5)])
         pointAction = SKAction.repeat((SKAction.sequence([SKAction.moveBy(x: -5, y: 0, duration: 0.5), SKAction.moveBy(x: 5, y: 0, duration: 0.5)])), count: 10)
         walkOut = SKAction.move(to: CGPoint(x: self.frame.size.width * -1, y: self.frame.size.height * -0.4), duration: 2.4)
@@ -575,7 +579,7 @@ class L1LessonTwo: SKScene {
             
             self.pet1Text1.text = "Great job!"
             self.pet1Text2.text = "Goodbye!"
-            
+            self.done = true
             Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                 timer in
                 
@@ -591,10 +595,16 @@ class L1LessonTwo: SKScene {
         self.view?.presentScene(scene, transition: sceneTransition)
     }
     
-    func checkAnswer(answer: String) {
+    func checkAnswer(answer: String) -> Bool {
         if (answer.lowercased() == correctAnswers[counter].lowercased()) {
             nextPrompt()
+            return true
         }
+        return false
+    }
+    
+    func isDone() -> Bool {
+        return self.done
     }
     
     func nextPrompt() {
