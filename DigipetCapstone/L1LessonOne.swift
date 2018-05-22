@@ -27,7 +27,7 @@ class L1LessonOne: SKScene {
     var headerText: SKLabelNode!
     
     var array: [() -> ()] = []
-    var correctAnswers: [[String]] = [[]]
+    var correctAnswers: [[[String]]] = [[]]
     var counter: Int = 0
     
     var lang: Int = 0
@@ -37,6 +37,8 @@ class L1LessonOne: SKScene {
     var walkInAction2: SKAction!
     var walkIn2: SKAction!
     var walkOut: SKAction!
+    
+    let petImgs = ["china", "spain", "france"]
     
     var prompts: [[String]] = [["你好", "你好吗？", "欢迎","早上好","我很好，你呢？","下午好","你会说中文吗？","请问，怎么说","谢谢","再见","晚安"],["Hola", "¿Cómo estás？", "¡Bienvenido!","Buenos días","Bien, ¿y tú?","Buenas tardes","¿Hablas español?","Por favor, como se dice","¡Gracias!","¡Adios!","Buenas noches", "Buenas noches"],["Bonjour", "Ça va?","Bienvenue!","Salut!","Ça va bien, et toi?","Bonsoir!","Parlez-vous français?","S’il vous plaît, comment dit-on","Merci!","Au revoir!","Bonne nuit!", "Bonne nuit!"]]
     
@@ -123,7 +125,7 @@ class L1LessonOne: SKScene {
         addChild(pet2Text2)
         pet2Text2.isHidden = true
         
-        Pet1 = SKSpriteNode(imageNamed: "china")
+        Pet1 = SKSpriteNode(imageNamed: petImgs[lang])
         Pet1.size = CGSize(width: self.frame.size.width * 0.5, height: self.frame.size.height * 0.39)
         Pet1.zPosition = 1.0
         Pet1.position = CGPoint(x: self.frame.size.width, y: self.frame.size.height * -0.388)
@@ -163,7 +165,7 @@ class L1LessonOne: SKScene {
         pointer.isHidden = true
         
         array = [entranceAnimation, firstQuestion, sunrise, askQuestion, andYou, pet3, doYouSpeak, howDoYouSay, howDoYouSay2, thank, goodbye]
-        correctAnswers = [["你好","我很好","早上好","你好吗","我马马虎虎","下午好","我会说中文","对不起","没关系","再见","晚安"],["hola","muy bien","buenos días","bien","buenas tardes","hablo español","lo siento","está bien","de nada","adios","buenas noches"],["bonjour","ça va bien","salut","ça va","ça va","bonsoir","je parle français","désolé","ça va","de rien","au revoir","bonne nuit"]]
+        correctAnswers = [[["你好"],["我很好"],["早上好"],["你好吗"],["我马马虎虎"],["下午好"],["我会说中文"],["对不起"],["没关系"],["再见"],["晚安"]],[["hola", "¡hola!"],["muy bien", "muy bien."],["buenos días", "¡buenos días!"],["¿cómo estás?","cómo estás"],["bien"],["buenas tardes", "buenas tardes.", "buenas tardes."],["hablo español", "hablo español.", "no hablo español", "no hablo español.", "sí","no"],["lo siento"],["está bien", "está bien."],["de nada", "¡de nada!"],["¡adiós!", "adiós"],["buenas noches", "¡buenas noches!"]],[["bonjour", "bonjour!", "salut", "salut!"],["ça va bien", "ça va bien."],["salut", "salut!","bonjour","bonjour!"],["ça va", "ça va?", "comment ça va", "comment ça va?"],["ça va", "ça va."],["bonsoir", "bonsoir!"],["je parle français", "je parle français.", "je ne parle pas français", "je ne parle pas français.", "oui", "oui.", "non", "non."],["désolé", "désolée"],["ça va", "ça va.", "ce n\'est pas grave", "ce n\'est pas grave."],["de rien", "de rien.", "de rien!", "je t\'en prie", "je t\'en prie.", "je t\'en prie!", "je vous en prie", "je vous en prie.","je vous en prie!"],["au revoir", "au revoir!", "au revoir."],["bonne nuit", "bonne nuit!", "bonne nuit."]]]
         
         runLesson()
     }
@@ -411,7 +413,7 @@ class L1LessonOne: SKScene {
     }
     
     func checkAnswer(answer: String) -> Bool {
-        if (answer.lowercased() == correctAnswers[lang][counter].lowercased()) {
+        if correctAnswers[lang][counter].contains(answer.lowercased()) {
             nextPrompt()
             return true
         }

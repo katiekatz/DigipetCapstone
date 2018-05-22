@@ -90,7 +90,11 @@ class L1LessonTwoTalkView : UIViewController, SFSpeechRecognizerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "en"))
+        if let lang = UserDefaults.standard.string(forKey: "language") {
+            speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: lang))
+        } else {
+            speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "zh_Hans"))
+        }
         textField.isUserInteractionEnabled = false
         //myView.presentScene(myScene)
     }
