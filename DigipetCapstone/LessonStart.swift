@@ -96,6 +96,10 @@ class LessonStart : UIViewController {
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 
     
 }
