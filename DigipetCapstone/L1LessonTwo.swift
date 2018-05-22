@@ -35,7 +35,7 @@ class L1LessonTwo: SKScene {
     var lang : Int = 0
     
     var array: [() -> ()] = []
-    var correctAnswers: [[String]] = []
+    var correctAnswers: [[[String]]] = []
     var counter: Int = 0
     var animationRunning = false
     
@@ -232,7 +232,7 @@ class L1LessonTwo: SKScene {
         pointer.isHidden = true
         
         array = [entranceAnimation, math1, math2, math3, ask1, ask2, bigNumber, goodbye1, reentrance, people1, people2, goodbye2]
-        correctAnswers = [["你好", "1个苹果", "2只狗", "5只猫", "你有几辆车", "你有几本书", "一千", "再见", "你好", "8个人", "3个人", "再见"],["hola", "una manzana","dos perros","cinco gatos","cuántos autos tienes","¿cuántos libros tienes?","mil","adiós","hola", "8 personas", "3 personas", "adiós"],["bonjour","une pomme", "deux chiens", "cinq chats","Combien de voitures as-tu?","Combien de livres as-tu?","mille","au revoir","bonjour","8 gens", "3 gens", "au revoir"]]
+        correctAnswers = [[["你好"], ["1个苹果"], ["2只狗"], ["5只猫"], ["你有几辆车"], ["你有几本书"], ["一千"], ["再见"], ["你好"], ["8个人"], ["3个人"], ["再见"]],[["hola", "¡hola!"], ["una manzana", "una", "tienes una manzana"],["dos perros", "dos", "tienes dos perros"],["cinco gatos", "cinco", "tienes cinco gatos"],["cuántos autos tienes", "¿cuántos autos tienes?"],["¿cuántos libros tienes?", "cuántos libros tienes"],["mil"],["adiós", "¡adiós!"],["hola", "¡hola!"], ["ocho personas", "ocho"], ["tres personas", "tres"], ["adiós", "¡adiós!"]],[["bonjour", "bonjour!", "salut", "salut!"],["une pomme","une", "tu as une pomme"], ["deux chiens", "deux", "tu as deux chiens"], ["cinq chats", "cinq", "tu as cinq chats"],["combien de voitures as-tu?", "tu as combien de voitures?", "combien de voitures as-tu", "tu as combien de voitures"],["combien de livres as-tu?", "combien de livres as-tu", "tu as combien de livres?", "tu as combien de livres"],["mille", "une mille"],["au revoir", "au revoir!"],["bonjour", "bonjour!", "salut", "salut!"],["huit gens", "huit"], ["trois gens", "trois"], ["au revoir", "au revoir!"]]]
         runLesson()
     }
 
@@ -618,7 +618,7 @@ class L1LessonTwo: SKScene {
     }
     
     func checkAnswer(answer: String) -> Bool {
-        if (answer.lowercased() == correctAnswers[lang][counter].lowercased()) {
+        if correctAnswers[lang][counter].contains(answer.lowercased()) {
             nextPrompt()
             return true
         }
