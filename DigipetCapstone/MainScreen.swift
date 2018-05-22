@@ -38,6 +38,13 @@ class MainScreen : UIViewController {
         self.present(nextViewController!, animated:true) {}
     }
     
+    @IBAction func settingsButtonTouched(_ sender: Any) {
+        self.transitioningDelegate = RZTransitionsManager.shared()
+        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "settings")
+        nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
+        self.present(nextViewController!, animated:true) {}
+    }
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown

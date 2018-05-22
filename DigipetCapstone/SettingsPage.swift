@@ -40,5 +40,12 @@ class SettingsPage : UIViewController {
     }
     // stan loona
     
+    @IBAction func backButtonTouched(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
     
 }

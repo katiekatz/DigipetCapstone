@@ -84,7 +84,7 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="settings"/>
                                 <connections>
-                                    <segue destination="g42-Gh-Bt8" kind="show" id="VW1-Fk-NI9"/>
+                                    <action selector="settingsButtonTouched:" destination="sgx-Yj-ML6" eventType="touchUpInside" id="Cgp-98-xCO"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="china" translatesAutoresizingMaskIntoConstraints="NO" id="cEk-cz-0DN">
@@ -1656,15 +1656,15 @@
                                         </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="Iwc-fD-KhG" firstAttribute="bottom" secondItem="Ox7-D6-3nI" secondAttribute="bottomMargin" id="0XT-Bb-KWB"/>
                                         <constraint firstItem="ON2-Ac-F81" firstAttribute="top" secondItem="Ox7-D6-3nI" secondAttribute="topMargin" constant="7" id="2ld-5n-I2J"/>
                                         <constraint firstAttribute="trailing" secondItem="ON2-Ac-F81" secondAttribute="trailing" id="3sy-re-wNk"/>
-                                        <constraint firstItem="ON2-Ac-F81" firstAttribute="leading" secondItem="Iwc-fD-KhG" secondAttribute="trailing" constant="21" id="5NQ-xF-rNO"/>
-                                        <constraint firstItem="Iwc-fD-KhG" firstAttribute="top" secondItem="Ox7-D6-3nI" secondAttribute="topMargin" id="8qs-GF-lcS"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="ykh-ZM-5Fp" secondAttribute="bottom" constant="9" id="BCb-H1-rJD"/>
+                                        <constraint firstItem="ON2-Ac-F81" firstAttribute="leading" secondItem="Iwc-fD-KhG" secondAttribute="trailing" constant="21" id="JWf-Am-p6Q"/>
                                         <constraint firstItem="ykh-ZM-5Fp" firstAttribute="leading" secondItem="ON2-Ac-F81" secondAttribute="leading" id="ZhA-aT-yVm"/>
                                         <constraint firstItem="ykh-ZM-5Fp" firstAttribute="top" secondItem="ON2-Ac-F81" secondAttribute="bottom" constant="8" symbolic="YES" id="aWZ-Qg-3dJ"/>
-                                        <constraint firstItem="Iwc-fD-KhG" firstAttribute="bottom" secondItem="Ox7-D6-3nI" secondAttribute="bottomMargin" id="gcJ-Yk-D98"/>
-                                        <constraint firstItem="Iwc-fD-KhG" firstAttribute="leading" secondItem="Ox7-D6-3nI" secondAttribute="leadingMargin" id="yo8-hm-NnQ"/>
+                                        <constraint firstItem="Iwc-fD-KhG" firstAttribute="top" secondItem="Ox7-D6-3nI" secondAttribute="topMargin" id="gKP-1m-yVA"/>
+                                        <constraint firstItem="Iwc-fD-KhG" firstAttribute="leading" secondItem="Ox7-D6-3nI" secondAttribute="leadingMargin" id="zvI-tz-G28"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -1926,7 +1926,7 @@
         <!--Settings Page-->
         <scene sceneID="xit-P4-hCc">
             <objects>
-                <viewController id="g42-Gh-Bt8" customClass="SettingsPage" customModule="DigipetCapstone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settings" id="g42-Gh-Bt8" customClass="SettingsPage" customModule="DigipetCapstone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BjY-aL-XhH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1955,7 +1955,7 @@
                                     <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="sgx-Yj-ML6" kind="show" id="5Wb-RT-heE"/>
+                                    <action selector="backButtonTouched:" destination="g42-Gh-Bt8" eventType="touchUpInside" id="2KW-10-AIf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwd-H1-lx7">
