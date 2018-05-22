@@ -13,7 +13,6 @@ import Foundation
 
 class L1LessonOne: SKScene {
     var done: Bool!
-    
     var Pet1: SKSpriteNode!
     var Pet2: SKSpriteNode!
     var sBubble1: SKSpriteNode!
@@ -28,8 +27,10 @@ class L1LessonOne: SKScene {
     var headerText: SKLabelNode!
     
     var array: [() -> ()] = []
-    var correctAnswers: [String] = []
+    var correctAnswers: [[String]] = [[]]
     var counter: Int = 0
+    
+    var lang: Int = 0
     
     var rotateAction: SKAction!
     var pointAction: SKAction!
@@ -37,9 +38,28 @@ class L1LessonOne: SKScene {
     var walkIn2: SKAction!
     var walkOut: SKAction!
     
+    var prompts: [[String]] = [["你好", "你好吗？", "欢迎","早上好","我很好，你呢？","下午好","你会说中文吗？","请问，怎么说","谢谢","再见","晚上好", "晚安"],["Hola", "¿Cómo estás？", "¡Bienvenido!","Buenos días","Bien, ¿y tú?","Buenas tardes","¿Hablas español?","Por favor, como se dice","¡Gracias!","¡Adios!","Buenas noches", "Buenas noches"],["Bonjour", "Ça va?","Bienvenue!","Salut!","Ça va bien, et toi?","Bonsoir!","Parlez-vous français?","S’il vous plaît, comment dit-on","Merci!","Au revoir!","Bonne nuit!", "Bonne nuit!"]]
+    
     override func didMove(to view: SKView) {
+        if let language = UserDefaults.standard.string(forKey: "language") {
+            switch language {
+            case "zh_Hans":
+                lang = 0
+                break
+            case "fr_FR":
+                lang = 1
+                break
+            case "es_ES":
+                lang = 2
+                break
+            default:
+                lang = 0
+                
+            }
+        } else {
+            lang = 0
+        }
         done = false
-        
         rotateAction = SKAction.sequence([SKAction.rotate(byAngle: 0.2, duration: 0.5), SKAction.rotate(byAngle: -0.2, duration: 0.5)])
         pointAction = SKAction.repeat((SKAction.sequence([SKAction.moveBy(x: -5, y: 0, duration: 0.5), SKAction.moveBy(x: 5, y: 0, duration: 0.5)])), count: 10)
         walkInAction2 = SKAction.move(to: CGPoint(x: self.frame.size.width * -0.25, y: self.frame.size.height * -0.2), duration: 4)
@@ -143,7 +163,7 @@ class L1LessonOne: SKScene {
         pointer.isHidden = true
         
         array = [entranceAnimation, firstQuestion, sunrise, askQuestion, andYou, pet3, doYouSpeak, howDoYouSay, howDoYouSay2, thank, goodbye]
-        correctAnswers = ["Hello", "Good", "Good morning", "How are you", "Ok",  "Good afternoon", "Yes", "Sorry", "It\'s ok", "You\'re welcome", "Goodbye"]
+        correctAnswers = [["你好","我很好","早上好","你好吗","我马马虎虎","下午好","我会说中文","对不起","没关系","不客气","再见","晚安"],["bonjour","ça va bien","salut","ça va","ça va","bonsoir","je parle français","désolé","ça va","de rien","au revoir","bonne nuit"],["hola","muy bien","buenos días","bien","buenas tardes","hablo español","lo siento","está bien","de nada","adios","buenas noches"]]
         
         runLesson()
     }
@@ -174,7 +194,7 @@ class L1LessonOne: SKScene {
             timer in
             
             self.sBubble1.isHidden = false
-            self.pet1Text.text = "Hello!"
+            self.pet1Text.text = self.prompts[self.lang][0]
             self.pet1Text.isHidden = false
             
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) {
@@ -188,7 +208,7 @@ class L1LessonOne: SKScene {
     
     func firstQuestion() {
         //talkButton.isHidden = true
-        self.pet1Text.text = "How are you?"
+        self.pet1Text.text = prompts[lang][1]
         Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                 timer in
                 self.headerText.text = "👍"
@@ -200,7 +220,7 @@ class L1LessonOne: SKScene {
     
     func sunrise() {
         //talkButton.isHidden = true
-        self.pet1Text.text = "Welcome!"
+        self.pet1Text.text = prompts[lang][2]
         self.headerText.text = ""
         
         Timer.scheduledTimer(withTimeInterval: 2, repeats: false) {
@@ -233,7 +253,7 @@ class L1LessonOne: SKScene {
                 Timer.scheduledTimer(withTimeInterval: 1, repeats: false) {
                     timer in
                     
-                    self.pet2Text.text = "Good Morning!"
+                    self.pet2Text.text = self.prompts[self.lang][3]
                     self.pet2Text.isHidden = false
                     self.sBubble2.isHidden = false
                     Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
@@ -262,8 +282,8 @@ class L1LessonOne: SKScene {
     
     func andYou() {
         //talkButton.isHidden = true
-        pet2Text.text = "I'm good,"
-        pet2Text2.text = "and you?"
+        pet2Text.text = prompts[self.lang][4]
+        pet2Text2.text = prompts[self.lang][5]
         pet2Text2.isHidden = false
         Timer.scheduledTimer(withTimeInterval: 0.7, repeats: false) {
             timer in
@@ -299,7 +319,7 @@ class L1LessonOne: SKScene {
                 self.pet2Text.isHidden = false
                 self.pet2Text2.isHidden = false
                 self.sBubble2.isHidden = false
-                self.pet2Text.text = "Good afternoon."
+                self.pet2Text.text = self.prompts[self.lang][6]
                 Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                     timer in
                     self.pointer.isHidden = false
@@ -314,8 +334,8 @@ class L1LessonOne: SKScene {
     
     func doYouSpeak() {
         //talkButton.isHidden = true
-        pet2Text.text = "Do you speak"
-        pet2Text2.text = "_______?"
+        pet2Text.text = prompts[self.lang][7]
+        pet2Text2.text = prompts[self.lang][8]
         Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                     timer in
             self.pointer.isHidden = false
@@ -326,7 +346,7 @@ class L1LessonOne: SKScene {
     
     func howDoYouSay() {
         //talkButton.isHidden = true
-        pet2Text.text = "How do you say"
+        pet2Text.text = prompts[self.lang][9]
         pet2Text2.text =  "\"sorry\"?"
         Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                     timer in
@@ -338,8 +358,8 @@ class L1LessonOne: SKScene {
     
     func howDoYouSay2() {
         //talkButton.isHidden = true
-        pet2Text.text = "And how do you"
-        pet2Text2.text = "say \"It's okay\"?"
+        pet2Text.text = prompts[self.lang][9]
+        pet2Text2.text = "\"It's okay\"?"
         Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                     timer in
             self.pointer.isHidden = false
@@ -351,7 +371,7 @@ class L1LessonOne: SKScene {
     
     func thank() {
         //talkButton.isHidden = true
-        pet2Text.text = "Thank you!"
+        pet2Text.text = prompts[self.lang][10]
         pet2Text2.text = ""
         Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                     timer in
@@ -363,7 +383,7 @@ class L1LessonOne: SKScene {
     
     func goodbye() {
         //talkButton.isHidden = true
-        pet1Text.text = "Goodbye!"
+        pet1Text.text = prompts[self.lang][11]
         Timer.scheduledTimer(withTimeInterval: 0.75, repeats: false) {
                     timer in
             self.pointer.isHidden = false
@@ -391,7 +411,7 @@ class L1LessonOne: SKScene {
     }
     
     func checkAnswer(answer: String) -> Bool {
-        if (answer.lowercased() == correctAnswers[counter].lowercased()) {
+        if (answer.lowercased() == correctAnswers[lang][counter].lowercased()) {
             nextPrompt()
             return true
         }
