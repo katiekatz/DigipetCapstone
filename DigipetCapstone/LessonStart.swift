@@ -21,6 +21,7 @@ class LessonStart : UIViewController {
     
     var level : String = "0"
     var lesson : Lesson?
+    var lang = 0
     
     @IBOutlet weak var startBox: UIView!
     @IBOutlet weak var petImg: UIImageView!
@@ -53,7 +54,26 @@ class LessonStart : UIViewController {
         startBox.layer.borderWidth = 3
         startBox.layer.cornerRadius = 10
         
-        petImg.image = UIImage(named: (lesson?.petImg)!)
+        if let language = UserDefaults.standard.string(forKey: "language") {
+            switch language {
+            case "zh_Hans":
+                lang = 0
+                break
+            case "fr_FR":
+                lang = 2
+                break
+            case "es_ES":
+                lang = 1
+                break
+            default:
+                lang = 0
+                
+            }
+        } else {
+            lang = 0
+        }
+        
+        petImg.image = UIImage(named: (lesson?.petImg[lang])!)
         
         lessonName.text = lesson?.name.uppercased()
         
@@ -95,6 +115,10 @@ class LessonStart : UIViewController {
         let nextViewController = storyboard?.instantiateViewController(withIdentifier: (lesson?.fileDest)! + "TalkView")
         nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
         self.present(nextViewController!, animated:true) {}
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
 
     

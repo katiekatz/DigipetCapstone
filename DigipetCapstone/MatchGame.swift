@@ -436,6 +436,10 @@ class MatchGame: UIViewController, SFSpeechRecognizerDelegate {
         }
     }
     
+    @IBAction func backButtonTouched(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 extension Array {

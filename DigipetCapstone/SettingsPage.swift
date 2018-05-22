@@ -9,6 +9,8 @@
 import UIKit
 
 class SettingsPage : UIViewController {
+    var mainScreen: MainScreen?
+    
     @IBOutlet weak var chineseButton: UIButton!
     @IBOutlet weak var spanishButton: UIButton!
     @IBOutlet weak var frenchButton: UIButton!
@@ -40,5 +42,19 @@ class SettingsPage : UIViewController {
     }
     // stan loona
     
+    @IBAction func backButtonTouched(_ sender: Any) {
+        if UserDefaults.standard.string(forKey: "language") == "zh_Hans" {
+            mainScreen?.pet.image = UIImage(named: "china")
+        } else if UserDefaults.standard.string(forKey: "language") == "es_ES" {
+            mainScreen?.pet.image = UIImage(named: "spain")
+        } else {
+            mainScreen?.pet.image = UIImage(named: "france")
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
     
 }

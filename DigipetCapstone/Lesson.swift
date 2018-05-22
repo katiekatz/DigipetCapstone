@@ -11,13 +11,13 @@ import UIKit
 class Lesson {
     
     var name : String
-    var petImg : String
+    var petImg : [String]
     var fileDest : String
     var infoVH : String
     var infoGD : String
     var startDesc : String
     
-    init?(name: String, petImg : String, fileDest : String, infoVH : String, infoGD : String, startDesc : String){
+    init?(name: String, petImg : [String], fileDest : String, infoVH : String, infoGD : String, startDesc : String){
         
         guard !name.isEmpty else {
             return nil
