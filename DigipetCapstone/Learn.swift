@@ -10,9 +10,7 @@ import Foundation
 import UIKit
 
 class Learn : UIViewController {
-    
-    @IBOutlet weak var searchBar: UISearchBar!
-    
+        
     @IBOutlet weak var level1: UIButton!
     @IBOutlet weak var level2: UIButton!
     @IBOutlet weak var level3: UIButton!
@@ -23,10 +21,6 @@ class Learn : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.searchBar.endEditing(true)
     }
     
     @IBAction func backButtonTouched(_ sender: Any) {

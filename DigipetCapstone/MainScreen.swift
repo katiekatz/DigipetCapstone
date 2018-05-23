@@ -16,6 +16,14 @@ class MainScreen : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if UserDefaults.standard.string(forKey: "language") == "zh_Hans" {
+            pet.image = UIImage(named: "china")
+        } else if UserDefaults.standard.string(forKey: "language") == "es_ES" {
+            pet.image = UIImage(named: "spain")
+        } else {
+            pet.image = UIImage(named: "france")
+        }
         RZTransitionsManager.shared().defaultPresentDismissAnimationController = RZCardSlideAnimationController()
         RZTransitionsManager.shared().defaultPushPopAnimationController = RZCardSlideAnimationController()
         
