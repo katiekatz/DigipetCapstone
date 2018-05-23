@@ -180,25 +180,27 @@ class SilhouetteGame : UIViewController, SFSpeechRecognizerDelegate {
         randArray.remove(at: 0)
         answerText.layer.opacity = 1
         nextButton.imageView?.image = UIImage(named: "nextButton")
-
-        explainText.text = "That is \"" + (guess?.sp[0])! + "\""
-        imageView.image = guess?.image
-
-        
-        
-        var looper = false
         var option = [String]()
+        var looper = false
         switch lang {
         case "ch":
+            explainText.text = "That is \"" + (guess?.ch[0])! + "\""
+            imageView.image = guess?.image
             option = (guess?.ch)!
             break
         case "sp":
+            explainText.text = "That is \"" + (guess?.sp[0])! + "\""
+            imageView.image = guess?.image
             option = (guess?.sp)!
             break
         case "fr":
+            explainText.text = "That is \"" + (guess?.fr[0])! + "\""
+            imageView.image = guess?.image
             option = (guess?.fr)!
             break
         default:
+            explainText.text = "That is \"" + (guess?.ch[0])! + "\""
+            imageView.image = guess?.image
             option = (guess?.ch)!
             break
         }
