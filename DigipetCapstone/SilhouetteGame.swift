@@ -32,6 +32,7 @@ class Guesser {
 
 class SilhouetteGame : UIViewController, SFSpeechRecognizerDelegate {
     var lang = String()
+    var langArray = Int()
     let audioEngine = AVAudioEngine()
     var speechRecognizer = SFSpeechRecognizer()
     var request = SFSpeechAudioBufferRecognitionRequest()

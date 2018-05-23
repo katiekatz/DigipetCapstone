@@ -131,10 +131,10 @@ class L1LessonOne: SKScene {
         Pet1.position = CGPoint(x: self.frame.size.width, y: self.frame.size.height * -0.388)
         addChild(Pet1)
         
-        Pet2 = SKSpriteNode(imageNamed: "petplain")
+        Pet2 = SKSpriteNode(imageNamed: "plainPet1")
         Pet2.size = CGSize(width: self.frame.size.width * 0.4, height: self.frame.size.height * 0.3)
-        Pet2.color = UIColor.red
-        Pet2.colorBlendFactor = 0.5
+        //Pet2.color = UIColor.red
+        //Pet2.colorBlendFactor = 0.5
         Pet2.zPosition = 1
         Pet2.position = CGPoint(x: self.frame.size.width, y: self.frame.size.height * -0.388)
         addChild(Pet2)
@@ -165,7 +165,7 @@ class L1LessonOne: SKScene {
         pointer.isHidden = true
         
         array = [entranceAnimation, firstQuestion, sunrise, askQuestion, andYou, pet3, doYouSpeak, howDoYouSay, howDoYouSay2, thank, goodbye]
-        correctAnswers = [[["你好"],["我很好"],["早上好"],["你好吗"],["我马马虎虎"],["下午好"],["我会说中文"],["对不起"],["没关系"],["再见"],["晚安"]],[["hola", "¡hola!"],["muy bien", "muy bien."],["buenos días", "¡buenos días!"],["¿cómo estás?","cómo estás"],["bien"],["buenas tardes", "buenas tardes.", "buenas tardes."],["hablo español", "hablo español.", "no hablo español", "no hablo español.", "sí","no"],["lo siento"],["está bien", "está bien."],["de nada", "¡de nada!"],["¡adiós!", "adiós"],["buenas noches", "¡buenas noches!"]],[["bonjour", "bonjour!", "salut", "salut!"],["ça va bien", "ça va bien."],["salut", "salut!","bonjour","bonjour!"],["ça va", "ça va?", "comment ça va", "comment ça va?"],["ça va", "ça va."],["bonsoir", "bonsoir!"],["je parle français", "je parle français.", "je ne parle pas français", "je ne parle pas français.", "oui", "oui.", "non", "non."],["désolé", "désolée"],["ça va", "ça va.", "ce n\'est pas grave", "ce n\'est pas grave."],["de rien", "de rien.", "de rien!", "je t\'en prie", "je t\'en prie.", "je t\'en prie!", "je vous en prie", "je vous en prie.","je vous en prie!"],["au revoir", "au revoir!", "au revoir."],["bonne nuit", "bonne nuit!", "bonne nuit."]]]
+        correctAnswers = [[["你好","你好。"],["我很好","我很好。"],["早上好","早上好。"],["你好吗","你好吗？"],["我马马虎虎","我马马虎虎。"],["下午好","下午好。"],["我会说中文","我会说中文。"],["对不起","对不起。"],["没关系","没关系。"],["再见","再见。"],["晚安","晚安。"]],[["hola", "¡hola!"],["muy bien", "muy bien."],["buenos días", "¡buenos días!"],["¿cómo estás?","cómo estás"],["bien"],["buenas tardes", "buenas tardes.", "buenas tardes."],["hablo español", "hablo español.", "no hablo español", "no hablo español.", "sí","no"],["lo siento"],["está bien", "está bien."],["de nada", "¡de nada!"],["¡adiós!", "adiós"],["buenas noches", "¡buenas noches!"]],[["bonjour", "bonjour!", "salut", "salut!"],["ça va bien", "ça va bien."],["salut", "salut!","bonjour","bonjour!"],["ça va", "ça va?", "comment ça va", "comment ça va?"],["ça va", "ça va."],["bonsoir", "bonsoir!"],["je parle français", "je parle français.", "je ne parle pas français", "je ne parle pas français.", "oui", "oui.", "non", "non."],["désolé", "désolée"],["ça va", "ça va.", "ce n\'est pas grave", "ce n\'est pas grave."],["de rien", "de rien.", "de rien!", "je t\'en prie", "je t\'en prie.", "je t\'en prie!", "je vous en prie", "je vous en prie.","je vous en prie!"],["au revoir", "au revoir!", "au revoir."],["bonne nuit", "bonne nuit!", "bonne nuit."]]]
         
         runLesson()
     }
