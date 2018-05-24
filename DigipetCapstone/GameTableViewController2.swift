@@ -1,14 +1,14 @@
 //
-//  GameTableViewController.swift
+//  GameTableViewController2.swift
 //  DigipetCapstone
 //
-//  Created by Emma Ingallinera on 5/14/18.
+//  Created by Katie Katz on 5/23/18.
 //  Copyright © 2018 Katie Katz. All rights reserved.
 //
 
 import UIKit
 
-class GameTableViewController : UITableViewController {
+class GameTableViewController2 : UITableViewController {
     
     var gameNumber : String = "0"
     var minigameList = [Minigame]()
@@ -17,14 +17,10 @@ class GameTableViewController : UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         tableView.tableFooterView = UIView()
         
         tableView.alwaysBounceVertical = false
-        
-        tableView.dataSource = self
-        tableView.delegate = self
-        
+    
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -37,35 +33,26 @@ class GameTableViewController : UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        // Table view cells are reused and should be dequeued using a cell identifier.
-        let cellIdentifier = "GameTableViewCell"
+        let cellIdentifier = "GameTableViewCell2"
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? GameTableViewCell  else {
-            fatalError("The dequeued cell is not an instance of GameTableViewCell.")
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? GameTableViewCell2 else {
+            fatalError("The dequeued cell is not an instance of GameTableViewCell2")
         }
         
-        print("----------")
-        print(cell)
-        print("----------")
-        
-        
-        // Fetches the appropriate meal for the data source layout.
         let minigame = minigameList[indexPath.row]
         
         cell.minigameName.text = minigame.name
-        cell.prevImg.image = UIImage(named: minigame.prevImg)
+        cell.prevImage.image = UIImage(named: minigame.prevImg)
         cell.startButton.minigame = minigame
         cell.startButton.layer.borderColor = color
         return cell
-        
         
     }
     
     @IBAction func infoButtonPressed(_ sender: Any) {
         
-        print("infoButtonPressed")
-        let parent = self.parent as! LevelVCPlay
-        let ib = sender as! GameButton
+        let parent = self.parent as! LevelVCPlay2
+        let ib = sender as! GameButton2
         parent.minigameFocus = ib.minigame
         parent.text = gameNumber
         parent.infoMinigameName.text = ib.minigame?.name
@@ -83,4 +70,3 @@ class GameTableViewController : UITableViewController {
     
     
 }
-

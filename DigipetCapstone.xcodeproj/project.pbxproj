@@ -14,6 +14,9 @@
 		0079CC3A20A9BC40002296D8 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0079CC3920A9BC40002296D8 /* GameTableViewCell.swift */; };
 		0079CC3C20A9BC74002296D8 /* GameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0079CC3B20A9BC74002296D8 /* GameTableViewController.swift */; };
 		0200321920AA5DE0003FB481 /* Play2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0200321820AA5DE0003FB481 /* Play2.swift */; };
+		0228973320B500570098E0E3 /* LevelVCPlay2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228973220B500570098E0E3 /* LevelVCPlay2.swift */; };
+		0228973520B639CD0098E0E3 /* GameTableViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228973420B639CD0098E0E3 /* GameTableViewController2.swift */; };
+		0228973720B63ADE0098E0E3 /* GameTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228973620B63ADE0098E0E3 /* GameTableViewCell2.swift */; };
 		025B45DE20A08008006849EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B45DD20A08008006849EE /* AppDelegate.swift */; };
 		025B45F920A08009006849EE /* DigipetCapstoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B45F820A08009006849EE /* DigipetCapstoneTests.swift */; };
 		025B460420A08009006849EE /* DigipetCapstoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B460320A08009006849EE /* DigipetCapstoneUITests.swift */; };
@@ -95,6 +98,9 @@
 		0079CC3B20A9BC74002296D8 /* GameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewController.swift; sourceTree = "<group>"; };
 		0200321820AA5DE0003FB481 /* Play2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Play2.swift; sourceTree = "<group>"; };
 		0223288820A082C0002A2646 /* Digipet-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Digipet-Bridging-Header.h"; sourceTree = "<group>"; };
+		0228973220B500570098E0E3 /* LevelVCPlay2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelVCPlay2.swift; sourceTree = "<group>"; };
+		0228973420B639CD0098E0E3 /* GameTableViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewController2.swift; sourceTree = "<group>"; };
+		0228973620B63ADE0098E0E3 /* GameTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell2.swift; sourceTree = "<group>"; };
 		025B45DA20A08008006849EE /* DigipetCapstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigipetCapstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		025B45DD20A08008006849EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		025B45EF20A08009006849EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -269,6 +275,9 @@
 				025B45EF20A08009006849EE /* Info.plist */,
 				0079CC3120A9B50D002296D8 /* Play.swift */,
 				0079CC3520A9B9A3002296D8 /* Minigame.swift */,
+				0228973220B500570098E0E3 /* LevelVCPlay2.swift */,
+				0228973420B639CD0098E0E3 /* GameTableViewController2.swift */,
+				0228973620B63ADE0098E0E3 /* GameTableViewCell2.swift */,
 			);
 			path = DigipetCapstone;
 			sourceTree = "<group>";
@@ -548,6 +557,7 @@
 				6ABACA1120ADBDFB001794E4 /* SettingsPage.swift in Sources */,
 				025B465520A080E4006849EE /* RZVerticalSwipeInteractionController.m in Sources */,
 				0079CC3C20A9BC74002296D8 /* GameTableViewController.swift in Sources */,
+				0228973720B63ADE0098E0E3 /* GameTableViewCell2.swift in Sources */,
 				026F42FF20A5C2490098EC23 /* L1LessonOneTalkView.swift in Sources */,
 				0079CC3A20A9BC40002296D8 /* GameTableViewCell.swift in Sources */,
 				026F42FB20A5C2490098EC23 /* L1LessonTwoTypeView.swift in Sources */,
@@ -570,11 +580,13 @@
 				025B46A920A08190006849EE /* GameViewController.swift in Sources */,
 				0079CC3620A9B9A3002296D8 /* Minigame.swift in Sources */,
 				0079CC3220A9B50D002296D8 /* Play.swift in Sources */,
+				0228973320B500570098E0E3 /* LevelVCPlay2.swift in Sources */,
 				025B46C120A081C0006849EE /* LessonStartBox.swift in Sources */,
 				025B46C020A081C0006849EE /* LessonRow.swift in Sources */,
 				0079CC3820A9BBA1002296D8 /* GameStart.swift in Sources */,
 				0079CC3420A9B8F6002296D8 /* LevelVCPlay.swift in Sources */,
 				025B464A20A080E4006849EE /* RZTransitionsNavigationController.m in Sources */,
+				0228973520B639CD0098E0E3 /* GameTableViewController2.swift in Sources */,
 				025B465020A080E4006849EE /* RZRectZoomAnimationController.m in Sources */,
 				025B46A420A08139006849EE /* GameScene.swift in Sources */,
 				025B46BF20A081C0006849EE /* LessonInfoBox.swift in Sources */,
