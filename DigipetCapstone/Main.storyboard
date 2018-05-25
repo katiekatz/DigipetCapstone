@@ -1711,6 +1711,7 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="startButtonTapped:" destination="V67-wz-fx3" eventType="touchUpInside" id="MVP-QX-hzk"/>
+                                                        <action selector="startButtonTouched:" destination="tEc-3d-Jx3" eventType="touchUpInside" id="of3-dU-dki"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7B-gv-MZf" customClass="GameButton" customModule="DigipetCapstone" customModuleProvider="target">
@@ -1725,6 +1726,7 @@
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
+                                                        <action selector="infoBackButtonTouched:" destination="tEc-3d-Jx3" eventType="touchUpInside" id="KSn-oY-rKa"/>
                                                         <action selector="infoBackButtonTouched:" destination="V67-wz-fx3" eventType="touchUpInside" id="VB8-qx-n4A"/>
                                                     </connections>
                                                 </button>
@@ -2132,10 +2134,10 @@
             </objects>
             <point key="canvasLocation" x="525.60000000000002" y="-837.03148425787117"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Game Table View Controller2-->
         <scene sceneID="xa3-gd-xCE">
             <objects>
-                <tableViewController id="B5d-hJ-6fV" sceneMemberID="viewController">
+                <tableViewController id="B5d-hJ-6fV" customClass="GameTableViewController2" customModule="DigipetCapstone" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="peA-Dq-Tf2">
                         <rect key="frame" x="0.0" y="0.0" width="378" height="505"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -49,8 +49,133 @@ class LevelVCPlay2 : UIViewController {
     @IBOutlet weak var infoBackButton: GameButton!
     
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        guard let tableController = childViewControllers.first as? GameTableViewController2 else {
+            fatalError("uh oh where'd the GameTableViewController 2 go???")
+        }
+        
+        tableViewController = tableController
+        blur.alpha = 0
+        infoView.layer.borderColor = UIColor.black.cgColor
+        infoView.layer.borderWidth = 3
+        infoView.layer.cornerRadius = 10
+        infoMinigameName.text = minigameFocus?.name
+        infoVH.text = minigameFocus?.infoVH
+        infoDir.text = minigameFocus?.infoDir
+        infoStartButton.layer.borderColor = color1.cgColor
+        infoStartButton.layer.cornerRadius = 14
+        infoStartButton.layer.masksToBounds = true
+        infoStartButton.layer.borderWidth = 2
+        infoStartButton.layer.backgroundColor = UIColor(red: 249/255.0, green: 249/255.0, blue: 249/255.0, alpha: 1).cgColor
+        infoBackButton.layer.borderColor = color2.cgColor
+        infoBackButton.layer.cornerRadius = 14
+        infoBackButton.layer.masksToBounds = true
+        infoBackButton.layer.borderWidth = 2
+        infoBackButton.layer.backgroundColor = UIColor(red: 249/255.0, green: 249/255.0, blue: 249/255.0, alpha: 1).cgColor
+        
+        infoView.alpha = 0
+        
+        l1Games += [minigame1, minigame2, minigame3, minigame4, minigame5, minigame6]
+        l2Games += [minigame7]
+        
+        levelNumber?.text = text
+        tableViewController!.gameNumber = text
+        switch text {
+        case "1":
+            levelNumber?.textColor = color1
+            print("L1Games: ")
+            print(l1Games)
+            tableViewController?.minigameList = l1Games
+            tableViewController?.color = color1.cgColor
+        case "2":
+            levelNumber?.textColor = color2
+            tableViewController?.minigameList = l2Games
+            tableViewController?.color = color2.cgColor
+        case "3":
+            levelNumber?.textColor = color3
+            tableViewController?.minigameList = l3Games
+            tableViewController?.color = color3.cgColor
+        case "4":
+            levelNumber?.textColor = color4
+            tableViewController?.minigameList = l4Games
+            tableViewController?.color = color4.cgColor
+        case "5":
+            levelNumber?.textColor = color5
+            tableViewController?.minigameList = l5Games
+            tableViewController?.color = color5.cgColor
+        case "6":
+            levelNumber?.textColor = color6
+            tableViewController?.minigameList = l6Games
+            tableViewController?.color = color6.cgColor
+        default:
+            fatalError("game clicked wasn't 1-6???")
+        }
+        
+        tableViewController?.tableView.reloadData()
+        
+        if showInfo == "yes" {
+            blur.alpha = 1
+            infoView.alpha = 1
+            infoStartButton.minigame = minigameFocus
+        }
+        
+    }
+    
+    
     @IBAction func backButtonTouched(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func startButtonTouched(_ sender: Any) {
+        self.blur.alpha = 0
+        self.infoView.alpha = 0
+        showInfo = "nil"
+        
+        RZTransitionsManager.shared().defaultPresentDismissAnimationController = RZCirclePushAnimationController()
+        
+        RZTransitionsManager.shared().defaultPushPopAnimationController = RZCirclePushAnimationController()
+        self.transitioningDelegate = RZTransitionsManager.shared()
+        let nextViewController = storyboard?.instantiateViewController(withIdentifier: "minigameStart")
+        (nextViewController as! GameStart).level = text
+        (nextViewController as! GameStart).minigame = minigameFocus
+        nextViewController?.transitioningDelegate = RZTransitionsManager.shared()
+        self.present(nextViewController!, animated:true) {}
+        RZTransitionsManager.shared().defaultPresentDismissAnimationController = RZCardSlideAnimationController()
+        RZTransitionsManager.shared().defaultPushPopAnimationController = RZCardSlideAnimationController()
+    }
+    
+    @IBAction func infoBackButtonTouched(_ sender: Any) {
+        UIView.animate(withDuration: 0.3){
+            self.blur.alpha = 0
+            self.infoView.alpha = 0
+        }
+        showInfo = "nil"
+    }
+    
+    
+    
+    override var shouldAutorotate: Bool {
+        return true
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            return .allButUpsideDown
+        } else {
+            return .all
+        }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Release any cached data, images, etc that aren't in use.
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
     
 }

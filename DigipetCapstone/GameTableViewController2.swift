@@ -33,6 +33,8 @@ class GameTableViewController2 : UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        print("tableview func running")
+        
         let cellIdentifier = "GameTableViewCell2"
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? GameTableViewCell2 else {
